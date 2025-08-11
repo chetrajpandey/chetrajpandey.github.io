@@ -16,14 +16,30 @@
     body{ margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif; color:var(--fg); background:radial-gradient(1200px 600px at 10% -10%, rgba(11,83,148,.10), transparent 60%), radial-gradient(1200px 600px at 110% 110%, rgba(11,83,148,.10), transparent 60%), var(--bg); }
     main{ display:flex; justify-content:center; padding:2rem; }
     .card{ width:min(1200px,95vw); background:var(--card); border-radius:1.25rem; box-shadow:0 10px 25px rgba(0,0,0,.07); overflow:hidden; }
-    .banner{ background:linear-gradient(135deg, var(--brand), #08315e); color:white; padding:0.8rem 2.5rem; display:flex; gap:2rem; align-items:center; flex-wrap:wrap; }
+    .banner{ background:linear-gradient(135deg, var(--brand), #08315e); color:white; padding:1rem 2.5rem; display:flex; gap:2rem; align-items:center; flex-wrap:wrap; }
     .banner-left{ flex:1 1 520px; }
     .banner h1{ margin:0 0 .25rem 0; font-size:1.9rem }
     .subtitle{ margin:.25rem 0 1rem; opacity:.95 }
     .actions{ display:flex; flex-wrap:wrap; gap:.6rem }
-    .btn{ display:inline-flex; align-items:center; gap:.4rem; text-decoration:none; padding:.65rem .9rem; border-radius:.7rem; font-weight:600; border:1px solid rgba(255,255,255,.35); color:white }
+    .btn{ display:inline-flex; align-items:center; gap:.3rem; text-decoration:none; padding:.5rem .9rem; border-radius:.7rem; font-size: 0.95rem; font-weight:600; border:1px solid rgba(255,255,255,.35); color:white }
     .btn:hover{ background:rgba(255,255,255,.12) }
-    .photo{ width:210px; height:210px; border-radius:50%; object-fit:cover; background:#d9e2ec; border:2px solid rgba(255,255,255,.45) }
+    .btn .fa-file-pdf {
+    color: #d32f2f; }
+    .office-address {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .office-address i {
+      color: #ffd54f; /* gold icon accent */
+    }
+
+
+    .photo{ width:224px; height:224px; border-radius:50%; object-fit:cover; background:#d9e2ec; border:2px solid rgba(255,255,255,.45); margin-top: -0px; }
     .bio-section {
       background: linear-gradient(90deg, rgba(11,83,148,0.05) 0%, rgba(11,83,148,0.02) 100%);
       border-bottom: 1px solid color-mix(in oklab, var(--brand) 15%, transparent);
@@ -52,12 +68,12 @@
     }
 
     .temp-note {
-    margin-top: 1rem;
+    margin-top: 0.85rem;
     font-size: 0.85rem;
     color: var(--muted);
     font-style: italic;
     border-left: 3px solid color-mix(in oklab, var(--brand) 20%, transparent);
-    padding-left: 0.6rem;
+    padding-left: 0.4rem;
   }
 
 
@@ -97,6 +113,7 @@
   College of Science & Engineering<br>
   Texas Christian University<br>
   Fort Worth, Texas, USA
+  <p class="office-address"><i class="fas fa-map-marker-alt"></i> Office Address: 2840 West Bowie Street (341 A), Fort Worth, TX, USA, 76109 </p>
 </p></div>
           <div class="actions">
               <a class="btn primary" href="mailto:c.pandey@tcu.edu"><i class="fas fa-envelope"></i> Email </a>
@@ -105,6 +122,7 @@
               <a class="btn secondary" href="https://github.com/chetrajpandey"><i class="fab fa-github"></i> GitHub</a>
               <a class="btn secondary" href="https://www.linkedin.com/in/chetraj-pandey"><i class="fab fa-linkedin"></i> LinkedIn</a>
           <a class="btn secondary" href="https://www.researchgate.net/profile/Chetraj-Pandey"><i class="fa-brands fa-researchgate"></i> ResearchGate</a>
+          <a class="btn secondary" href="assets/file/Chetraj_Pandey_CV_2025.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
 
           </div>
           <p class="temp-note">
@@ -267,37 +285,56 @@
         </section>
 
       </div>
-      <footer>
+     <footer>
   <div class="footer-content">
-    <span>© <span id="year"></span> Chetraj Pandey. All rights reserved.</span>
-    <span>
-      <a href="mailto:c.pandey@tcu.edu">Email</a> |
-      <a href="https://scholar.google.com/citations?user=3yZmF7kAAAAJ&hl=en">Google Scholar</a>
-    </span>
+    <div class="footer-left">
+      <i class="fas fa-code"></i> © <span id="year"></span> Chetraj Pandey — All rights reserved.
+    </div>
+    <div class="footer-links">
+      <a href="mailto:c.pandey@tcu.edu"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://scholar.google.com/citations?user=3yZmF7kAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+    </div>
   </div>
 </footer>
 
+
 <style>
   footer {
-    background: #0b5394;
-    color: white;
-    padding: 1rem 2rem;
-  }
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 0.9rem;
-  }
-  .footer-content a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.3rem;
-  }
-  .footer-content a:hover {
-    text-decoration: underline;
-  }
+  background: #0b5394;
+  color: white;
+  padding: 1rem 2rem;
+  border-top: 3px solid rgba(255,255,255,0.15);
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd54f;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+}
 </style>
 
     </section>
