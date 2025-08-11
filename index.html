@@ -35,7 +35,7 @@
     }
 
     .office-address i {
-      color: #ffd54f; /* gold icon accent */
+      color:rgba(255, 255, 255, 0.9); /* gold icon accent */
     }
 
 
@@ -124,6 +124,27 @@
       transform: translateY(-1px);
     }
 
+    .announcement {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      background: rgba(255, 213, 79, 0.15); /* soft gold background */
+      border-left: 4px solid #ffd54f;
+      border-right: 4px solid #ffd54f;
+      padding: 0.5rem 0.7rem;
+      border-radius: 0.4rem;
+      color: white;
+      line-height: 1.2;
+    }
+    .announcement a {
+      color: #ffd54f;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .announcement a:hover {
+      text-decoration: underline;
+    }
+
+
 
 
     footer{ padding:1rem 2rem; color:var(--muted); font-size:.9rem; text-align:center; border-top:1px solid color-mix(in oklab, var(--brand) 10%, transparent) }
@@ -172,6 +193,11 @@
           <p class="temp-note">
   This is a temporary website. A new site with current & upcoming projects, people, lab updates, and more will launch soon.
 </p>
+<p class="announcement">
+  <strong>Now hiring:</strong> Computer Science students at TCU interested in <em>AI &amp; ML research</em>.  
+  Please email your CV to <a href="mailto:c.pandey@tcu.edu">c.pandey@tcu.edu</a>.
+</p>
+
         </div>
         <img class="photo" src="assets/image/chetraj_pp.png" alt="Profile photo placeholder" />
       </div>
