@@ -47,17 +47,20 @@
     }
 
     .bio-content {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
-    .bio-content h2 {
-      font-size: 1.4rem;
-      color: var(--brand);
-      margin-bottom: 1rem;
-      border-left: 4px solid var(--brand);
-      padding-left: 0.5rem;
-    }
+.bio-content h2 {
+  font-size: 1.4rem;
+  color: var(--brand);
+  margin: 1rem 0 1rem; /* adds breathing room above and below */
+  border-left: 4px solid var(--brand);
+  padding-left: 0.5rem;
+  display: inline-block; /* isolates from inline flow so no stray "|" appears */
+  background: linear-gradient(to right, rgba(11,83,148,0.05), transparent);
+}
+
 
     .bio-content p {
       margin: 0 0 1rem;
@@ -178,7 +181,7 @@
   College of Science & Engineering<br>
   Texas Christian University<br>
   Fort Worth, Texas, USA
-  <p class="office-address"><i class="fas fa-map-marker-alt"></i> Office Address: 2840 West Bowie Street (341 A), Fort Worth, TX, USA, 76109 </p>
+  <p class="office-address"><i class="fas fa-map-marker-alt"></i> Office Address: 2840 West Bowie Street, Suite 341, Fort Worth, TX, USA, 76109 </p>
 </p></div>
           <div class="actions">
               <a class="btn primary" href="mailto:c.pandey@tcu.edu"><i class="fas fa-envelope"></i> Email </a>
@@ -206,19 +209,19 @@
   <div class="bio-content">
     <h2>About Me</h2>
     <p>
-      Dr. Chetraj Pandey is an Assistant Professor of Computer Science (AI & ML) at Texas Christian University (TCU), specializing in explainable artificial intelligence (XAI), deep learning, and rare event prediction. He earned his Ph.D. in Computer Science from Georgia State University, where his research focused on the development of interpretable deep learning methods for data-intensive applications, including AI systems for high-stakes applications such as space weather forecasting.
+      I am an Assistant Professor of Computer Science at Texas Christian University (TCU), specializing in explainable artificial intelligence (XAI), deep learning, and rare event prediction. I earned my Ph.D. in Computer Science from Georgia State University, where my research focused on the development of interpretable deep learning methods for data-intensive applications, including AI systems for high-stakes applications such as space weather forecasting.
+      My research centers on the integration of explainable AI, continual learning, and space weather forecasting. My doctoral work introduced novel full-disk and active region-based solar flare prediction models, significantly enhancing forecasting capabilities, particularly in near-limb regions that are traditionally difficult to model due to projection effects. I also developed ensemble models that integrate time series and image-based inputs to improve prediction accuracy and granularity. In addition to improving predictive performance, my research introduced techniques for analyzing explanation consistency, investigating multi-granular explanations as proxies for localized predictions, and conducting quantitative evaluations of explanations through physically meaningful features, revealing systematic patterns that offer insight into model behavior.
     </p>
     <p>
-      Dr. Pandey’s research centers on the integration of explainable AI, continual learning, and space weather forecasting. His doctoral work introduced novel full-disk and active region-based solar flare prediction models, significantly enhancing forecasting capabilities, particularly in near-limb regions that are traditionally difficult to model due to projection effects. He also developed ensemble models that integrate time series and image-based inputs to improve prediction accuracy and granularity. In addition to improving predictive performance, his research introduced techniques for analyzing explanation consistency, investigating multi-granular explanations as proxies for localized predictions, and conducting quantitative evaluations of explanations through physically meaningful features, revealing systematic patterns that offer insight into model behavior.
+      Building on this prior work, I served as a Scientific Researcher with the NASA-partnered Frontier Development Lab (FDL-X 2024), where I was responsible for the design and implementation of a continual learning framework for forecasting geomagnetic perturbations. This effort contributed to the development of two machine learning pipelines, DAGGER++ and SHEATH, designed to meet operational forecasting requirements, where I led the continual learning component of DAGGER++ and supported the redevelopment of the SHEATH model to enable integration of real-time solar and geomagnetic data for dynamic forecasting.
     </p>
     <p>
-      Building on this prior work, Dr. Pandey served as a Scientific Researcher with the NASA-partnered Frontier Development Lab (FDL-X 2024), where he was responsible for the design and implementation of a continual learning framework for forecasting geomagnetic perturbations. This effort contributed to the development of two machine learning pipelines, DAGGER++ and SHEATH, designed to meet operational forecasting requirements, where Dr. Pandey led the continual learning component of DAGGER++ and supported the redevelopment of the SHEATH model to enable integration of real-time solar and geomagnetic data for dynamic forecasting.
-    </p>
-    <p>
-      At TCU, Dr. Pandey will lead research efforts in interpretable and adaptive machine learning, with a focus on continual learning methods that allow AI systems to evolve alongside changing data environments. He looks forward to mentoring students and building collaborative initiatives in trustworthy AI, with applications spanning space weather forecasting and other domains where explainability, adaptability, and reliability are essential.
+      At TCU, I will lead research efforts in interpretable and adaptive machine learning, with a focus on continual learning methods that allow AI systems to evolve alongside changing data environments. I look forward to mentoring students and building collaborative initiatives in trustworthy AI, with applications spanning space weather forecasting and other domains where explainability, adaptability, and reliability are essential.
     </p>
   </div>
 </div>
+
+
 
 
       <div class="content">
