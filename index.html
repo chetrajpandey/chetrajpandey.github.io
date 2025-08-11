@@ -96,8 +96,44 @@
     .publist li{ margin:.45rem 0 }
     .publist a{ color:var(--brand); text-decoration:none; border-bottom:1px dotted color-mix(in oklab, var(--brand) 35%, transparent) }
     .publist a:hover{ border-bottom-style:solid }
+    .pronounce-btn {
+      margin-left: 0.4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.10);
+      color: white;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+      position: relative;
+      top: -5px; /* lifts it slightly above text baseline */
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .pronounce-btn i {
+      font-size: 13px;
+    }
+
+    .pronounce-btn:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-1px);
+    }
+
+
 
     footer{ padding:1rem 2rem; color:var(--muted); font-size:.9rem; text-align:center; border-top:1px solid color-mix(in oklab, var(--brand) 10%, transparent) }
+    .footer-photo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,0.35);
+    }
   </style>
 </head>
 <body>
@@ -106,7 +142,15 @@
       <!-- Single banner with contact + photo on the right -->
       <div class="banner">
         <div class="banner-left">
-          <h1>Chetraj Pandey, Ph.D.</h1>
+          <h1>
+  Chetraj Pandey, Ph.D.
+  <button class="pronounce-btn" id="pronounceBtn" aria-label="Play name pronunciation" aria-pressed="false" title="Pronunciation">
+    <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+  </button>
+  <audio id="nameAudio" src="assets/audio/pronunciation.mp3" preload="auto"></audio>
+</h1>
+
+
           <div class="subtitle"><p>
   <strong>Assistant Professor of Computer Science</strong><br>
   Department of Computer Science<br>
@@ -287,9 +331,11 @@
       </div>
      <footer>
   <div class="footer-content">
-    <div class="footer-left">
-      <i class="fas fa-code"></i> © <span id="year"></span> Chetraj Pandey — All rights reserved.
-    </div>
+<div class="footer-left">
+  <img src="assets/image/chetraj_pp.png" alt="Chetraj Pandey" class="footer-photo">
+  © <span id="year"></span> Chetraj Pandey — All rights reserved.
+</div>
+
     <div class="footer-links">
       <a href="mailto:c.pandey@tcu.edu"><i class="fas fa-envelope"></i> Email</a>
       <a href="https://scholar.google.com/citations?user=3yZmF7kAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
@@ -340,5 +386,34 @@
     </section>
   </main>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  (function(){
+    const btn = document.getElementById('pronounceBtn');
+    const audio = document.getElementById('nameAudio');
+    const icon = btn.querySelector('i');
+
+    function setPlayingState(playing){
+      btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+      icon.className = playing ? 'fa-solid fa-pause' : 'fa-solid fa-volume-high';
+      btn.setAttribute('aria-label', playing ? 'Pause name pronunciation' : 'Play name pronunciation');
+    }
+
+    btn.addEventListener('click', async () => {
+      try {
+        if(audio.paused){
+          await audio.play();
+          setPlayingState(true);
+        } else {
+          audio.pause();
+          setPlayingState(false);
+        }
+      } catch(e){}
+    });
+
+    audio.addEventListener('ended', () => setPlayingState(false));
+  })();
+</script>
+
+
 </body>
 </html>

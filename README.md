@@ -1,15 +1,17 @@
-### 👋 Hey there! 
-#### I'm Chetraj Pandey, and this is my personal website where I share my journey, interests, and projects.
+# Chetraj Pandey — Academic Website
 
+Welcome to my personal academic website.  
+I am **Chetraj Pandey, Ph.D.**, Assistant Professor of Computer Science (AI & ML) at Texas Christian University.
 
-## What You'll Find Here
-- 📚 My Background: Learn about my experiences, education, and interests.
-- 💼 My Work: Discover the exciting projects I've been a part of.
-- 🌐 Connect with Me: Find me on various platforms and get in touch.
+## Overview
+This site includes:
+- **Background & Education** — My academic journey and research interests  
+- **Research & Publications** — Peer-reviewed journals, conference proceedings, and posters  
+- **Professional Experience** — Teaching, research, and service to the profession  
+- **Contact & Links** — Find me across academic and professional platforms  
 
-### Ready to Dive In?
-To know more about me, please visit [chetrajpandey.github.io](https://chetrajpandey.github.io/).
+## Visit the Website
+📍 [chetrajpandey.github.io](https://chetrajpandey.github.io/)
 
-Feel free to explore, and I hope you enjoy your time here! Don't hesitate to reach out if you have any questions or just want to chat.
-
+Feel free to explore and connect if you’d like to collaborate or learn more about my work.
 
