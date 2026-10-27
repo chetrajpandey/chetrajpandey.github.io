@@ -20,10 +20,12 @@
     },
     {
       "name": "Assem Kadirova",
+      "start_year": "2025",
+      "expected_graduation_year": "2029",
       "group": "Undergraduate researchers",
       "role": "Undergraduate Student",
       "linkedin_url": "https://www.linkedin.com/in/assemkdv/",
-      "bio": "Assem Kadirova is a Computer Science student and Research Assistant at Texas Christian University. Her interests focus on developing efficient software systems, optimizing performance, and exploring how computers can process and interpret visual information. Currently, she is developing software tools that help researchers work with large scientific datasets related to solar activity. Her work involves building automated data-processing pipelines, improving software reliability, and making research workflows faster and more efficient.",
+      "bio": "Assem Kadirova is a sophomore Computer Science student and Research Assistant at Texas Christian University. Her interests focus on developing efficient software systems, optimizing performance, and exploring how computers can process and interpret visual information. Currently, she is developing software tools that help researchers work with large scientific datasets related to solar activity. Her work involves building automated data-processing pipelines, improving software reliability, and making research workflows faster and more efficient.",
       "interests": [
         "Data-Intensive Computing",
         "Software Systems",
@@ -31,9 +33,7 @@
       ],
       "photo": "assets/uploads/assem-kadirova-profile-picture-ad6cbc108fba.jpg",
       "url": "",
-      "placeholder": false,
-      "start_year": "2025",
-      "expected_graduation_year": "2029"
+      "placeholder": false
     },
     {
       "name": "Duc Le",
@@ -54,10 +54,12 @@
     },
     {
       "name": "Thu My Banh",
+      "start_year": "2025",
+      "expected_graduation_year": "2029",
       "group": "Undergraduate researchers",
       "role": "Undergraduate Student",
       "linkedin_url": "https://www.linkedin.com/in/mybanh/",
-      "bio": "Thu My Banh is an undergraduate Computer Science student and Research Assistant at Texas Christian University. Her research interests include machine learning and artificial intelligence, particularly their applications in space weather forecasting and multimodal data analysis. She is also interested in digital behavioral research, research cyberinfrastructure, scientific software engineering and data visualization. Her current research focuses on developing software tools and data pipelines that make large-scale scientific datasets more accessible and easier to analyze.",
+      "bio": "Thu My Banh is a sophomore Computer Science student and Research Assistant at Texas Christian University. Her research interests include machine learning and artificial intelligence, particularly their applications in space weather forecasting and multimodal data analysis. She is also interested in digital behavioral research, research cyberinfrastructure, scientific software engineering and data visualization. Her current research focuses on developing software tools and data pipelines that make large-scale scientific datasets more accessible and easier to analyze.",
       "interests": [
         "Software Engineering",
         "Data Visualization",
@@ -65,22 +67,24 @@
       ],
       "photo": "assets/uploads/1767823594470-61caddf08272.jpeg",
       "url": "",
-      "placeholder": false,
-      "start_year": "2025",
-      "expected_graduation_year": "2029"
+      "placeholder": false
     },
     {
       "name": "Tien Nguyen",
+      "start_year": "2024",
+      "expected_graduation_year": "2028",
       "group": "Undergraduate researchers",
       "role": "Undergraduate Student",
-      "linkedin_url": "",
-      "bio": "Profile to be added.",
-      "interests": [],
-      "photo": "",
+      "linkedin_url": "https://www.linkedin.com/in/tien-nguyen-598758329/",
+      "bio": "Tien Nguyen is a junior majoring in Computer Science at Texas Christian University (TCU). His research interests include machine learning, deep learning, and computer vision. As an undergraduate Research Assistant at TCU, his work focuses on applying deep learning and image segmentation techniques to solar imaging data. His research involves data preprocessing, model development, hyperparameter optimization, and performance evaluation to improve the accuracy and generalization of deep learning models for analyzing complex solar phenomena.",
+      "interests": [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision"
+      ],
+      "photo": "assets/uploads/1750780851699-7d1c81ccc89a.png",
       "url": "",
-      "placeholder": false,
-      "start_year": "2024",
-      "expected_graduation_year": "2028"
+      "placeholder": false
     },
     {
       "name": "Piyush Luitel",
@@ -105,7 +109,9 @@
       "role": "Undergraduate Student",
       "linkedin_url": "",
       "bio": "",
-      "interests": [],
+      "interests": [
+
+      ],
       "photo": "",
       "url": "",
       "placeholder": false,
