@@ -660,3 +660,48 @@ html:has(.hiring-notice[open]) { overflow: hidden; }
 .hiring-notice .hiring-notice-dismiss { position: absolute; top: 6px; right: 12px; margin: 0; }
 .hiring-notice-dismiss button { border: 0; background: none; color: var(--muted); font-size: 28px; line-height: 1; padding: 8px; }
 .hiring-notice h2:focus { outline: none; }
+
+/* Keep navigation available while preserving space for the page content. */
+html { scroll-padding-top: var(--sticky-header-offset, 120px); }
+.site-header { position: sticky; top: 0; z-index: 10; transition: box-shadow .18s ease; }
+.site-header .header-inner { transition: padding-block .18s ease; }
+.site-header.is-scrolled { box-shadow: 0 4px 18px #11182726; }
+.site-header.is-scrolled .header-inner { padding-block: 10px; }
+@media (max-width: 1099px) {
+  .site-header.is-scrolled .header-inner { padding-block: 12px; }
+  body.js #navigation.is-open {
+    max-height: calc(100vh - var(--header-row-height, 90px) - 24px);
+    max-height: calc(100dvh - var(--header-row-height, 90px) - 24px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header, .site-header .header-inner { transition: none; }
+}
+
+/* Profile sidebars share the live header offset instead of sliding underneath it. */
+@media screen and (min-width: 701px) {
+  .identity-sidebar, .about-layout .contact-panel {
+    position: sticky;
+    top: var(--sticky-header-offset, 120px);
+    max-height: calc(100vh - var(--sticky-header-offset, 120px) - 16px);
+    max-height: calc(100dvh - var(--sticky-header-offset, 120px) - 16px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .about-layout .contact-panel { grid-row: 1 / 4; max-height: none; overflow: visible; }
+  .about-layout .about-details { grid-column: 1; grid-row: 3; min-width: 0; }
+  .about-details .career-record { grid-template-columns: 170px minmax(0,1fr); gap: 4px 24px; }
+}
+
+/* Compact, wrapping resources keep the About sidebar within the viewport. */
+.about-layout .contact-panel .about-contact-resources { grid-column: 1/-1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; border-top: 1px solid var(--line); padding-top: 14px; margin-top: 18px; }
+.about-contact-resources .profile-links { display: contents; }
+.about-contact-resources .profile-links a { font-size: 12px; }
+.about-layout .contact-panel .about-contact-resources .pronounce-button { margin: 0; padding: 5px 8px; font-size: 11px; }
+.about-layout .contact-panel .about-contact-resources .audio-status { flex-basis: 100%; margin: 0; font-size: 12px; }
+.about-contact-resources .audio-status:empty { display: none; }
+@media screen and (min-width: 701px) and (max-height: 600px) {
+  .about-layout .contact-panel { position: static; }
+}

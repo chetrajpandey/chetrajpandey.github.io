@@ -14,6 +14,60 @@ document.addEventListener('keydown', (event) => {
     menuButton.focus();
   }
 });
+
+// Different enter/leave thresholds prevent header-height changes from flickering.
+const stickyHeader = document.querySelector('.site-header');
+if (stickyHeader) {
+  const headerInner = stickyHeader.querySelector('.header-inner');
+  const headerName = stickyHeader.querySelector('.wordmark');
+  const headerControls = stickyHeader.querySelector('.header-controls');
+  const updateHeaderOffsets = () => {
+    const bounds = stickyHeader.getBoundingClientRect();
+    document.documentElement.style.setProperty('--sticky-header-offset', Math.ceil(bounds.height + 16) + 'px');
+    const rowBottom = Math.max(headerName.getBoundingClientRect().bottom, headerControls.getBoundingClientRect().bottom);
+    const padding = parseFloat(getComputedStyle(headerInner).paddingBottom) || 0;
+    stickyHeader.style.setProperty('--header-row-height', Math.ceil(rowBottom - bounds.top + padding + 1) + 'px');
+  };
+  const updateCompactHeader = () => {
+    if (window.scrollY > 96) stickyHeader.classList.add('is-scrolled');
+    else if (window.scrollY < 16) stickyHeader.classList.remove('is-scrolled');
+  };
+  updateCompactHeader();
+  updateHeaderOffsets();
+  window.addEventListener('scroll', updateCompactHeader, {passive: true});
+  window.addEventListener('pageshow', updateCompactHeader);
+  window.addEventListener('resize', updateHeaderOffsets);
+  if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffsets).observe(stickyHeader);
+  const closeNavigation = () => {
+    menuButton?.setAttribute('aria-expanded', 'false');
+    navigation?.classList.remove('is-open');
+  };
+  // Scroll gestures close the compact menu without reacting to layout anchoring.
+  const collapseForScroll = () => {
+    if (window.innerWidth < 1100 && navigation?.classList.contains('is-open')) closeNavigation();
+  };
+  document.addEventListener('wheel', (event) => {
+    if (event.deltaY) collapseForScroll();
+  }, {passive: true});
+  document.addEventListener('touchmove', collapseForScroll, {passive: true});
+  document.addEventListener('pointerdown', (event) => {
+    if (event.clientX >= document.documentElement.clientWidth) collapseForScroll();
+  }, {passive: true});
+  document.addEventListener('keydown', (event) => {
+    if (['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key)
+        && !event.target.closest('input,textarea,select')
+        && !(event.key === ' ' && event.target.closest('button,a'))) collapseForScroll();
+  });
+  navigation?.addEventListener('click', (event) => {
+    if (event.target.closest('a')) closeNavigation();
+  });
+  const desktopNavigation = window.matchMedia('(min-width: 1100px)');
+  desktopNavigation.addEventListener('change', () => {
+    closeNavigation();
+    updateHeaderOffsets();
+  });
+}
+
 const form = document.querySelector('.publication-filters');
 if (form) {
   const publications = [...document.querySelectorAll('.publication')];
