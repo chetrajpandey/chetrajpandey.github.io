@@ -7,6 +7,8 @@ Run `Open Website & Editor.command` from the repository, or use its desktop shor
 - Preview: http://127.0.0.1:4000/
 - Editor: http://127.0.0.1:4001/
 
+Save any open editor form before running `Close Website & Editor.command` (also available as a desktop shortcut). It stops only the launcher-managed preview and editor for this checkout, after checking their saved process IDs, working folder and ports. It does not stop unrelated services or modify website content. `ruby local-admin/stop.rb --dry-run` checks the targets without stopping them.
+
 The launcher reuses existing servers. Logs and process IDs are stored in `.local-preview/`.
 
 ## Content

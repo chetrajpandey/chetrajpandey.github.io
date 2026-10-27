@@ -16,6 +16,7 @@ defaults:
     values:
       layout: default
 exclude:
+  - "Close Website & Editor.command"
   - "Open Website & Editor.command"
   - .local-preview
   - local-admin
