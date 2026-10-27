@@ -705,3 +705,7 @@ html { scroll-padding-top: var(--sticky-header-offset, 120px); }
 @media screen and (min-width: 701px) and (max-height: 600px) {
   .about-layout .contact-panel { position: static; }
 }
+
+/* A fixed SVG stroke avoids platform-specific emoji glyphs on outbound links. */
+.link-arrow { display: inline-block; width: .85em; height: .85em; margin-inline-start: .25em; vertical-align: -.08em; opacity: .75; flex-shrink: 0; }
+.identity-links .link-arrow { display: none; }
