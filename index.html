@@ -5,7 +5,7 @@ title: Home
 {% assign profile = site.data.profile %}
 <div class="container faculty-layout">
   <aside class="identity-sidebar" aria-label="Faculty profile">
-    <img class="identity-portrait" src="{{ profile.portrait | relative_url }}" alt="{{ profile.name | escape }}" width="400" height="480" fetchpriority="high">
+    <img data-portrait draggable="false" class="identity-portrait" src="{{ profile.portrait | relative_url }}" alt="{{ profile.name | escape }}" width="400" height="480" fetchpriority="high">
     <div class="identity-details">
       <p class="identity-role">{{ profile.role | escape }}</p>
       <p class="identity-affiliation">{{ profile.department | escape }}<br>{% if profile.college and profile.college != '' %}{{ profile.college | escape }}<br>{% endif %}<a href="{{ profile.institution_url | default: 'https://www.tcu.edu/' | escape }}" target="_blank" rel="noopener noreferrer">{{ profile.institution | escape }}</a></p>

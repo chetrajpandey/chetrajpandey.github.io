@@ -124,3 +124,10 @@ if (hiringNotice && typeof hiringNotice.showModal === 'function') {
     try { sessionStorage.setItem(hiringNoticeKey, '1'); } catch (_) {}
   }
 }
+
+// Discourage casual saving/dragging only on faculty and team portraits.
+// Public image URLs and screenshots remain accessible.
+document.querySelectorAll('img[data-portrait]').forEach((portrait) => {
+  portrait.addEventListener('contextmenu', (event) => event.preventDefault());
+  portrait.addEventListener('dragstart', (event) => event.preventDefault());
+});
