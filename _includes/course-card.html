@@ -1,0 +1,8 @@
+{% assign records = include.group.items %}
+<article class="course-card">
+  {% assign codes = records | map: 'code' | uniq | join: ' · ' %}{% if codes != '' %}<p class="eyebrow">{{ codes | escape }}</p>{% endif %}
+  <h3>{{ include.group.name | escape }}</h3>
+  <ul class="course-offerings">{% for course in records %}{% unless course.status == 'Developed' %}<li><span class="course-term">{{ course.term | escape }}</span>{% assign campus = course.institution | split: ' · ' | slice: 1, 100 | join: ' · ' %}{% if campus != '' %}<span class="course-campus">{{ campus | escape }}</span>{% endif %}<span>{{ course.description | escape }}</span></li>{% endunless %}{% endfor %}</ul>
+  {% assign taught = records | where_exp: 'course', "course.status != 'Developed'" %}{% if taught.size == 0 %}{% for course in records %}<p>{{ course.description | escape }}</p>{% endfor %}{% endif %}
+  <div class="course-links">{% assign resources = records | where_exp: 'course', "course.url != ''" | uniq: 'url' %}{% for course in resources %}{% assign label = course.url_label | default: 'Course materials' %}{% include link.html url=course.url label=label %}{% endfor %}</div>
+</article>

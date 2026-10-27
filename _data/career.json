@@ -1,0 +1,100 @@
+[
+  {
+    "group": "Professional experience",
+    "title": "Assistant Professor, Texas Christian University",
+    "period": "August 2025 – present",
+    "description": "Department of Computer Science, Louise Dilworth Davis College of Science & Engineering, Fort Worth, Texas; artificial intelligence and machine learning.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Research Assistant, Data Mining Lab, Georgia State University",
+    "period": "January 2021 – July 2025",
+    "description": "Led projects on interpretable and explainable deep learning for rare-event prediction, with applications in solar physics and space weather forecasting.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Scientific Researcher, Frontier Development Lab",
+    "period": "June – August 2024",
+    "description": "Trillium Technologies in partnership with NASA, Google Cloud, and NVIDIA. Led machine learning and continual learning work on predicting ground-level geomagnetic perturbations.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Instructor / Teaching Fellow, Georgia State University",
+    "period": "January – April 2024",
+    "description": "Taught undergraduate and graduate Fundamentals of Data Science.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Lecturer, Tribhuvan University, Himalaya College of Engineering",
+    "period": "April – December 2020",
+    "description": "Taught Artificial Intelligence and Discrete Mathematics.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Research Project Coordinator, Research and Innovation Unit, HCOE",
+    "period": "May 2019 – December 2020",
+    "description": "Supervised research-oriented projects of undergraduate computer and electronics engineering students at Himalaya College of Engineering, Lalitpur, Nepal.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Assistant Lecturer, Tribhuvan University, Himalaya College of Engineering",
+    "period": "April 2018 – March 2020",
+    "description": "Taught Artificial Intelligence, Computer Programming, Discrete Mathematics, and Numerical Methods.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Instructor / Co-founder, Line Academy",
+    "period": "September 2018 – December 2020",
+    "description": "Kupondole, Lalitpur, Nepal. Taught computer programming in C and Fortran.",
+    "url": ""
+  },
+  {
+    "group": "Professional experience",
+    "title": "Part-time Instructor, Tribhuvan University, KEC",
+    "period": "December 2017 – April 2018",
+    "description": "Kalimati, Lalitpur, Nepal. Taught Computer Programming.",
+    "url": ""
+  },
+  {
+    "group": "Awards and fellowships",
+    "title": "NSF Travel Grant",
+    "period": "June 3–7, 2024",
+    "description": "11th Community Coordinated Modeling Center (CCMC), NASA, Community Workshop 2024.",
+    "url": ""
+  },
+  {
+    "group": "Awards and fellowships",
+    "title": "Early-Career Travel Award",
+    "period": "June 27–28, 2023",
+    "description": "EarthCube 2023: Building Upon the EarthCube Community, a Geoscience and Cyberinfrastructure Workshop.",
+    "url": ""
+  },
+  {
+    "group": "Awards and fellowships",
+    "title": "Second Century Initiative (2CI) University Doctoral Fellowship",
+    "period": "May 2021 – August 2022",
+    "description": "Georgia State University.",
+    "url": ""
+  },
+  {
+    "group": "Awards and fellowships",
+    "title": "Full Governmental Scholarship on Merit",
+    "period": "November 2013 – August 2017",
+    "description": "Bachelor of Computer Engineering, Tribhuvan University, Institute of Engineering, Dharan, Nepal.",
+    "url": ""
+  },
+  {
+    "group": "Leadership",
+    "title": "4th Committee President, Association of Computer Engineering Students (ACES)",
+    "period": "July 2016 – June 2017",
+    "description": "Purwanchal Campus, Dharan, Nepal.",
+    "url": ""
+  }
+]

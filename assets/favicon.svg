@@ -1,0 +1,4 @@
+---
+layout: null
+---
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="{{ site.data.appearance.light_accent | default: '#4d1979' }}"/><text x="32" y="42" font-family="Georgia,serif" font-size="32" text-anchor="middle" fill="white">cp</text></svg>

@@ -1,0 +1,46 @@
+---
+layout: default
+title: Hiring
+---
+{% include heading.html title=site.data.page_text.hiring.title text=site.data.page_text.hiring.intro %}
+<div class="container section-bottom hiring-page">
+  <p>{{ site.data.page_text.hiring.welcome | escape | newline_to_br }}</p>
+  {% unless site.data.page_text.hiring.notice_enabled == false %}<button class="hiring-notice-reopen" type="button" data-hiring-notice-open hidden>{{ site.data.page_text.hiring.notice_reopen_link | escape }}</button>{% endunless %}
+  {% assign groups = 'PhD,Undergraduate' | split: ',' %}
+  {% for group in groups %}
+  <section class="hiring-group hiring-{{ group | downcase }}" aria-labelledby="hiring-{{ group | downcase }}">
+    <h2 id="hiring-{{ group | downcase }}">{% if group == 'PhD' %}{{ site.data.page_text.hiring.phd_heading | escape | newline_to_br }}{% else %}{{ site.data.page_text.hiring.undergraduate_heading | escape | newline_to_br }}{% endif %}</h2>
+    {% assign ads = site.data.hiring | where: 'group', group | sort: 'date' | reverse %}
+    {% assign open_ads = ads | where: 'status', 'Open' %}
+    {% for ad in open_ads %}{% include hiring-ad.html ad=ad %}{% else %}<p class="hiring-empty">{% if group == 'PhD' %}{{ site.data.page_text.hiring.phd_empty | escape | newline_to_br }}{% else %}{{ site.data.page_text.hiring.undergraduate_empty | escape | newline_to_br }}{% endif %}</p>{% endfor %}
+    {% assign archived_ads = ads | where_exp: 'ad', "ad.status != 'Open'" %}
+    {% if archived_ads.size > 0 %}<h3 class="hiring-archive-heading">{{ site.data.page_text.hiring.history_heading | escape | newline_to_br }}</h3>{% for ad in archived_ads %}{% include hiring-ad.html ad=ad %}{% endfor %}{% endif %}
+  </section>
+  {% endfor %}
+  <section class="hiring-inquiries" id="research-inquiries" aria-labelledby="inquiry-heading">
+    <h2 id="inquiry-heading">{{ site.data.page_text.hiring.inquiry_heading | escape | newline_to_br }}</h2>
+    <p>{{ site.data.page_text.hiring.inquiry_intro | escape | newline_to_br }}</p>
+    <ul>
+      <li>{{ site.data.page_text.hiring.proposal_guidance | escape | newline_to_br }} </li>
+      <li>{{ site.data.page_text.hiring.cv_guidance | escape | newline_to_br }} </li>
+      <li>{{ site.data.page_text.hiring.availability_guidance | escape | newline_to_br }} </li>
+    </ul>
+    <p>{{ site.data.page_text.hiring.inquiry_note | escape | newline_to_br }}</p>
+    {% assign email_url = site.data.profile.email | prepend: 'mailto:' %}{% include link.html url=email_url label=site.data.page_text.hiring.inquiry_link %}
+  </section>
+</div>
+
+{% unless site.data.page_text.hiring.notice_enabled == false %}
+<dialog class="hiring-notice" id="hiring-notice" aria-labelledby="hiring-notice-title" aria-describedby="hiring-notice-intro">
+  <div class="hiring-notice-content">
+    <form method="dialog" class="hiring-notice-dismiss"><button aria-label="Close application note" type="submit">×</button></form>
+    <h2 id="hiring-notice-title" tabindex="-1" autofocus>{{ site.data.page_text.hiring.notice_heading | escape | newline_to_br }}</h2>
+    <p id="hiring-notice-intro">{{ site.data.page_text.hiring.notice_intro | escape | newline_to_br }}</p>
+    <p>{{ site.data.page_text.hiring.notice_email | escape | newline_to_br }}</p>
+    <p>{{ site.data.page_text.hiring.notice_cv | escape | newline_to_br }}</p>
+    <p class="hiring-notice-closing">{{ site.data.page_text.hiring.notice_closing | escape | newline_to_br }}</p>
+    <form method="dialog"><button class="button">{{ site.data.page_text.hiring.notice_button | escape }}</button></form>
+  </div>
+</dialog>
+
+{% endunless %}

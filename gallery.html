@@ -1,0 +1,5 @@
+---
+layout: default
+title: Gallery
+---
+{% include heading.html title=site.data.page_text.gallery.title text=site.data.page_text.gallery.intro %}<section class="container section-bottom"><div class="event-grid">{% assign events = site.events | sort: 'event_date' | reverse %}{% for event in events %}{% include event-card.html item=event %}{% endfor %}</div></section>

@@ -1,0 +1,5 @@
+{% assign records = site.data.career | where: 'group', include.group %}
+{% if records.size > 0 %}<section class="career-group"{% if include.id %} id="{{ include.id }}"{% endif %}>
+<h2>{{ include.title | default: include.group | escape }}</h2>
+{% for record in records %}<article class="career-record"><h3>{{ record.title | escape }}</h3>{% if record.period != '' %}<p class="career-period">{{ record.period | escape }}</p>{% endif %}<p>{{ record.description | escape | newline_to_br }}</p>{% if record.url != '' %}{% include link.html url=record.url label='Related resource' %}{% endif %}</article>{% endfor %}
+</section>{% endif %}

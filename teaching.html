@@ -1,0 +1,23 @@
+---
+layout: default
+title: Teaching
+---
+{% include heading.html title=site.data.page_text.teaching.title text=site.data.page_text.teaching.intro %}
+<section class="container section-bottom teaching-institutions">
+{% assign institution_groups = site.data.teaching | group_by_exp: 'course', "course.institution | split: ' · ' | first" %}
+{% assign primary = institution_groups | where: 'name', site.data.profile.institution %}
+{% assign others = institution_groups | where_exp: 'group', 'group.name != site.data.profile.institution' %}
+{% assign ordered_groups = primary | concat: others %}
+{% for institution in ordered_groups %}
+  {% assign university = institution.name %}
+  {% assign palette = 'institution-custom' %}{% case university %}{% when 'Texas Christian University' %}{% assign palette = 'institution-tcu' %}{% when 'Georgia State University' %}{% assign palette = 'institution-gsu' %}{% when 'Tribhuvan University' %}{% assign palette = 'institution-tu' %}{% endcase %}
+  <section class="institution-panel {{ palette }}" aria-labelledby="university-{{ forloop.index }}">
+    <h2 id="university-{{ forloop.index }}">{{ university | default: 'Teaching' | escape }}</h2>
+    <div class="course-grid">
+    {% assign course_groups = institution.items | group_by: 'title' %}
+    {% for course_group in course_groups %}{% include course-card.html group=course_group university=university %}{% endfor %}
+    </div>
+  </section>
+{% endfor %}
+<p class="subtle-note">{{ site.data.page_text.teaching.materials_note | escape | newline_to_br }}</p>
+</section>

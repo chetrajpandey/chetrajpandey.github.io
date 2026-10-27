@@ -1,0 +1,210 @@
+[
+  {
+    "code": "COSC 50523",
+    "title": "Deep Learning",
+    "term": "Fall 2026",
+    "status": "Current",
+    "description": "Graduate study of deep learning methods.",
+    "url": "",
+    "institution": "Texas Christian University",
+    "url_label": ""
+  },
+  {
+    "code": "COSC 50303",
+    "title": "Data Mining",
+    "term": "Fall 2026",
+    "status": "Current",
+    "description": "Methods for discovering patterns and extracting knowledge from data.",
+    "url": "",
+    "institution": "Texas Christian University",
+    "url_label": ""
+  },
+  {
+    "code": "COSC / MATH 30103",
+    "title": "Introduction to Data Science",
+    "term": "Spring 2026",
+    "status": "Past",
+    "description": "An introduction to working with data and developing data-informed solutions.",
+    "url": "https://cse.tcu.edu/computer-science/files/syllabi/COSC30103.pdf",
+    "institution": "Texas Christian University",
+    "url_label": "TCU syllabus (PDF)"
+  },
+  {
+    "code": "COSC 40523",
+    "title": "Deep Learning",
+    "term": "Fall 2025",
+    "status": "Past",
+    "description": "An introduction to deep learning.",
+    "url": "https://cse.tcu.edu/computer-science/files/syllabi/COSC40523.pdf",
+    "institution": "Texas Christian University",
+    "url_label": "TCU syllabus (PDF)"
+  },
+  {
+    "code": "CITE 30103",
+    "title": "Linux / UNIX System Administration",
+    "term": "Fall 2025",
+    "status": "Past",
+    "description": "Linux and UNIX systems and administration.",
+    "url": "",
+    "institution": "Texas Christian University",
+    "url_label": ""
+  },
+  {
+    "code": "CSC 4780 / 6780 · DSCI 4780",
+    "title": "Fundamentals of Data Science",
+    "term": "Spring 2024",
+    "status": "Past",
+    "description": "Undergraduate and graduate instruction in data science.",
+    "url": "",
+    "institution": "Georgia State University"
+  },
+  {
+    "title": "Artificial Intelligence",
+    "term": "Spring 2020",
+    "code": "",
+    "description": "Lecturer; BCT juniors.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Discrete Mathematics",
+    "term": "Spring 2020",
+    "code": "",
+    "description": "Lecturer; BEX sophomores.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Artificial Intelligence",
+    "term": "Fall 2019",
+    "code": "",
+    "description": "Assistant Lecturer; B.Sc. CSIT juniors.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://cdcsit.tu.edu.np/downloads?category=207",
+    "url_label": "TU CSIT syllabi"
+  },
+  {
+    "title": "Computer Programming",
+    "term": "Fall 2019",
+    "code": "",
+    "description": "Assistant Lecturer; BCE freshmen.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Artificial Intelligence",
+    "term": "Spring 2019",
+    "code": "",
+    "description": "Assistant Lecturer; BCT juniors.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Discrete Mathematics",
+    "term": "Spring 2019",
+    "code": "",
+    "description": "Assistant Lecturer; BEX sophomores.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Computer Programming",
+    "term": "Fall 2018",
+    "code": "",
+    "description": "Assistant Lecturer; BCE freshmen.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Discrete Mathematics",
+    "term": "Spring 2018",
+    "code": "",
+    "description": "Assistant Lecturer; BEX sophomores.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "title": "Numerical Methods",
+    "term": "Spring 2018",
+    "code": "",
+    "description": "Assistant Lecturer; BCT sophomores.",
+    "institution": "Tribhuvan University · Himalaya College of Engineering",
+    "status": "Past",
+    "url": "https://ioe.tu.edu.np/pages/computer-engineering-curriculum-structure-2635",
+    "url_label": "Official IOE curriculum"
+  },
+  {
+    "title": "Computer Programming in C and Fortran",
+    "term": "September 2018 – December 2020",
+    "code": "",
+    "description": "Instructor and co-founder.",
+    "institution": "Line Academy · Kupondole, Lalitpur, Nepal",
+    "status": "Past",
+    "url": ""
+  },
+  {
+    "title": "Computer Programming",
+    "term": "Fall 2017",
+    "code": "",
+    "description": "Part-time Instructor; BCT freshmen.",
+    "institution": "Tribhuvan University · KEC, Kalimati, Lalitpur, Nepal",
+    "status": "Past",
+    "url": "https://doece.tcioe.edu.np/syllabus",
+    "url_label": "Official IOE syllabi"
+  },
+  {
+    "code": "COSC 50523",
+    "title": "Deep Learning",
+    "term": "",
+    "status": "Developed",
+    "description": "Developed.",
+    "institution": "Texas Christian University",
+    "url": "",
+    "url_label": ""
+  },
+  {
+    "code": "COSC 50303",
+    "title": "Data Mining",
+    "term": "",
+    "status": "Developed",
+    "description": "Developed.",
+    "institution": "Texas Christian University",
+    "url": "",
+    "url_label": ""
+  },
+  {
+    "code": "COSC 60903",
+    "title": "Research and Scholarship",
+    "term": "",
+    "status": "Developed",
+    "description": "Co-developed.",
+    "institution": "Texas Christian University",
+    "url": "",
+    "url_label": ""
+  },
+  {
+    "code": "COSC / MATH 30103",
+    "title": "Introduction to Data Science",
+    "term": "",
+    "status": "Developed",
+    "description": "Redesigned.",
+    "institution": "Texas Christian University",
+    "url": "https://cse.tcu.edu/computer-science/files/syllabi/COSC30103.pdf",
+    "url_label": "TCU syllabus (PDF)"
+  }
+]

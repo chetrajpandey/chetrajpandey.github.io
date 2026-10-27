@@ -1,0 +1,4 @@
+{%- assign link_start = include.url | slice: 0, 4 -%}
+{%- assign link_host = include.url | split: '/' | slice: 2 | first -%}
+{%- assign site_host = site.url | split: '/' | slice: 2 | first -%}
+<a class="{{ include.class | default: 'text-link' }}" href="{% include url.html url=include.url %}"{% if link_start == 'http' and link_host != site_host %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ include.label | escape }}<span aria-hidden="true"> ↗</span></a>

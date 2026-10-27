@@ -1,0 +1,68 @@
+{
+  "name": "Chetraj Pandey",
+  "suffix": "Ph.D.",
+  "role": "Assistant Professor",
+  "specialty": "Artificial Intelligence & Machine Learning",
+  "institution": "Texas Christian University",
+  "department": "Department of Computer Science",
+  "location": "Fort Worth, TX, USA",
+  "email": "c.pandey@tcu.edu",
+  "office": "Tucker Technology Center (TUC), 341 G",
+  "intro": "I develop explainable and adaptive machine learning methods for rare events, with applications in solar physics and space weather forecasting.",
+  "bio": [
+    "I am an Assistant Professor in the Department of Computer Science, Davis College of Science and Engineering, at Texas Christian University. My research connects artificial intelligence with questions in solar physics and space weather. I am interested in how machine learning can reveal useful patterns in scientific data—and how we can understand and trust what these models learn.",
+    "My work focuses on explainable deep learning, continual learning, and image analysis. I develop methods to examine why a model makes a prediction and to help models adapt as new data becomes available. Space weather forecasting provide challenging, practical settings for this work.",
+    "I earned my Ph.D. in Computer Science at Georgia State University, where I was advised by Dr. Berkay Aydin. My dissertation, “Explainable Deep Learning for Prediction of Rare Events,” explored interpretable models for solar flare forecasting. In 2024, I joined the NASA-partnered Frontier Development Lab as a scientific researcher, working on continual learning for forecasting ground-level geomagnetic perturbations.",
+    "At TCU, I teach Deep Learning, Data Science, and Data Mining and mentor students as they develop their own research questions. I enjoy working across disciplines and connecting ideas in computing with the scientific problems that motivate them."
+  ],
+  "portrait": "assets/uploads/chetrajpandey-new-9695d5d3cdc0.jpg",
+  "cv_url": "",
+  "recruiting": true,
+  "recruiting_text": "TCU students interested in explainable AI, deep learning, or space weather research are welcome to get in touch. Please include your interests and CV.",
+  "links": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=3yZmF7kAAAAJ&hl=en"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/chetrajpandey"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0002-4699-4050"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/chetraj-pandey"
+    },
+    {
+      "label": "TCU profile",
+      "url": "https://cse.tcu.edu/faculty-staff/view/chetraj-pandey"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D., Computer Science",
+      "institution": "Georgia State University",
+      "year": "January 2021 – August 2025"
+    },
+    {
+      "degree": "M.S., Computer Science",
+      "institution": "Georgia State University",
+      "year": "January 2021 – August 2024"
+    },
+    {
+      "degree": "B.E., Computer Engineering",
+      "institution": "Tribhuvan University, Nepal",
+      "year": "November 2013 – August 2017"
+    }
+  ],
+  "home_bio": [
+    "I am a computer scientist working at the intersection of artificial intelligence and space science. I build machine learning methods that help us understand complex scientific data, explain their predictions, and learn as new observations arrive.",
+    "Much of my work looks toward the Sun: how can we use its images and measurements to better anticipate solar flares and other space weather events? These questions guide my research in explainable AI and continual learning, and the projects I explore with my students."
+  ],
+  "institution_url": "https://www.tcu.edu/",
+  "college": "Davis College of Science and Engineering",
+  "phone": "817-257-1494"
+}

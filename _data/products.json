@@ -1,0 +1,124 @@
+[
+  {
+    "id": "solar-flare-records-dashboard",
+    "title": "Solar Flare Records Dashboard",
+    "type": "Software",
+    "description": "A web application that brings together solar flare records from NOAA, LMSAL, and NCEI Science Quality Data in one place. Data from the three sources are updated daily through asynchronous collection.",
+    "version": "",
+    "license": "",
+    "repository_url": "",
+    "pypi_url": "",
+    "dataset_url": "",
+    "docs_url": "",
+    "demo_url": "https://solar-events-dashboard-web.vercel.app/",
+    "publication_ids": [
+
+    ],
+    "date": ""
+  },
+  {
+    "id": "tamag",
+    "title": "TAMAG",
+    "type": "Software",
+    "description": "A Python library for transforming and augmenting solar magnetograms. TAMAG provides preprocessing and augmentation tools for machine learning workflows in solar physics and space weather forecasting.",
+    "version": "",
+    "license": "GPL-3.0-or-later",
+    "repository_url": "https://github.com/Adeyeha/tamag",
+    "dataset_url": "",
+    "docs_url": "https://github.com/Adeyeha/tamag/blob/master/docs/examples/TRANSFORMER.md",
+    "demo_url": "",
+    "publication_ids": [
+      "legacy-0"
+    ],
+    "pypi_url": "https://pypi.org/project/tamag/",
+    "date": "2025"
+  },
+  {
+    "title": "Bitmap Filtered Line of Sight HMI Active Region Patches with Augmentations",
+    "type": "Dataset",
+    "description": "Hourly HMI/SDO line-of-sight magnetograms of solar active regions from 2010–2018, filtered using SHARP bitmaps and standardized to 512 × 512 pixels. Includes flare labels and augmented images for training and evaluating solar flare prediction models.",
+    "version": "",
+    "license": "",
+    "publication_ids": [
+      "ordinal",
+      "legacy-4"
+    ],
+    "repository_url": "https://doi.org/10.7910/DVN/WLTBQQ",
+    "dataset_url": "https://doi.org/10.7910/DVN/WLTBQQ",
+    "docs_url": "https://doi.org/10.1007/978-3-031-70381-2_4",
+    "demo_url": "",
+    "id": "bitmap-filtered-line-of-sight-hmi-active-region-patches-with-augmentations",
+    "date": "2024"
+  },
+  {
+    "id": "surya",
+    "title": "Surya: Heliophysics Foundation Model",
+    "type": "Software",
+    "description": "A collaborative foundation model trained on Solar Dynamics Observatory imagery. The implementation includes inference and adaptation workflows for applications such as solar flare forecasting, active-region segmentation, solar wind prediction, and EUV spectra modeling.",
+    "publication_ids": [
+      "surya"
+    ],
+    "repository_url": "https://github.com/NASA-IMPACT/Surya",
+    "dataset_url": "",
+    "docs_url": "https://huggingface.co/nasa-ibm-ai4science/Surya-1.0",
+    "demo_url": "",
+    "pypi_url": "",
+    "version": "",
+    "license": "Apache-2.0",
+    "date": "2025"
+  },
+  {
+    "id": "geo-cloak",
+    "title": "GEO-CLOAK",
+    "type": "Software",
+    "description": "An end-to-end geomagnetic forecasting pipeline developed through FDL Heliolab. It combines SHEATH solar-wind forecasts with DAGGER-CL ground-level magnetic-field predictions, using continual learning to adapt as new observations arrive.",
+    "publication_ids": [
+      "geo-cloak",
+      "agu2024-geocloak"
+    ],
+    "repository_url": "https://github.com/FrontierDevelopmentLab/2024-HL-GeoCL",
+    "dataset_url": "",
+    "docs_url": "https://fdl.ai/fdl2024",
+    "demo_url": "",
+    "pypi_url": "",
+    "version": "",
+    "license": "MIT",
+    "date": "2024"
+  },
+  {
+    "id": "suryabench",
+    "title": "SuryaBench",
+    "type": "Dataset",
+    "description": "A collaborative collection of machine-learning-ready Solar Dynamics Observatory observations and benchmarks for heliophysics. Includes datasets for solar flare forecasting, active-region segmentation and emergence, coronal field extrapolation, solar wind forecasting, and EUV spectra modeling, with preparation code and baseline implementations.",
+    "publication_ids": [
+      "suryabench"
+    ],
+    "repository_url": "https://github.com/NASA-IMPACT/SuryaBench",
+    "dataset_url": "https://huggingface.co/collections/nasa-ibm-ai4science/suryabench",
+    "docs_url": "https://www.nature.com/articles/s41597-026-06552-5",
+    "demo_url": "",
+    "pypi_url": "",
+    "version": "",
+    "license": "",
+    "date": "2026"
+  },
+  {
+    "id": "data-driven-flare-labels",
+    "title": "Data-Driven Labels for Solar Flare Prediction",
+    "type": "Dataset",
+    "date": "2023",
+    "description": "Solar flare labels derived from GOES X-ray measurements, including relative flux increases and cumulative intensity measures. Includes companion code for exploring alternatives to conventional peak-flux labels in solar flare forecasting.",
+    "publication_ids": [
+      "legacy-9",
+      "legacy-14",
+      "legacy-8"
+    ],
+    "repository_url": "https://bitbucket.org/gsudmlab/data_driven_labels/src/main/",
+    "dataset_url": "https://doi.org/10.7910/DVN/1U2Q3C",
+    "docs_url": "",
+    "demo_url": "",
+    "pypi_url": "",
+    "version": "",
+    "license": ""
+  }
+]

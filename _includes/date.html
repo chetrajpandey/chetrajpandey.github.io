@@ -1,0 +1,1 @@
+{%- assign value = include.value | append: '' -%}{%- assign length = value | size -%}{%- if length == 4 -%}{{- value -}}{%- elsif length == 7 -%}{{- value | append: '-01' | date: '%b %Y' -}}{%- else -%}{{- value | date: '%b %d, %Y' -}}{%- endif -%}

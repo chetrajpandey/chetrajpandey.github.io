@@ -1,0 +1,205 @@
+[
+  {
+    "title": "Defended PhD Thesis",
+    "url": "",
+    "date": "2025-06-12",
+    "text": "Successfully defended my PhD thesis with minor corrections.",
+    "category": "Milestone"
+  },
+  {
+    "date": "2026-09-01",
+    "title": "NSF CAIG project funded",
+    "text": "Subaward PI on “CAIG: Heterogeneous Learning for Heliophysics with Uncertainties.” Funded amount: $124,719.",
+    "url": "",
+    "category": "Research"
+  },
+  {
+    "date": "2026-08",
+    "title": "Teaching Deep Learning and Data Mining this fall",
+    "text": "Fall 2026 courses at TCU include COSC 50523: Deep Learning and COSC 50303: Data Mining.",
+    "url": "teaching.html",
+    "category": "Teaching"
+  },
+  {
+    "date": "2026-03",
+    "title": "SuryaBench published in Scientific Data",
+    "text": "Collaborative work introduces a benchmark dataset for machine learning in heliophysics and space weather prediction.",
+    "url": "https://doi.org/10.1038/s41597-026-06552-5",
+    "category": "Publication"
+  },
+  {
+    "date": "2025-08",
+    "title": "Joined Texas Christian University",
+    "text": "Started as an Assistant Professor of Computer Science, focusing on artificial intelligence and machine learning.",
+    "url": "",
+    "category": "Milestone"
+  },
+  {
+    "date": "2026",
+    "title": "Program Committee · IEEE Big Data 2026",
+    "text": "Program Committee Member, 2026 IEEE International Conference on Big Data.",
+    "url": "",
+    "category": "Professional service"
+  },
+  {
+    "date": "2026",
+    "title": "Program Committee · ICTAI 2026",
+    "text": "Program Committee Member, 38th IEEE International Conference on Tools with Artificial Intelligence.",
+    "url": "",
+    "category": "Professional service"
+  },
+  {
+    "date": "2025",
+    "title": "Program Committee · SABID 2025",
+    "text": "Program Committee Member, ICDM Workshop on Solar & Stellar Astronomy Big Data.",
+    "url": "",
+    "category": "Professional service"
+  },
+  {
+    "date": "2024",
+    "title": "Program Committee · Discovery Science 2024",
+    "text": "Program Committee Member, 27th International Conference on Discovery Science.",
+    "url": "",
+    "category": "Professional service"
+  },
+  {
+    "date": "2023",
+    "title": "Session Chair · ICMLA 2023",
+    "text": "Session Chair for Session 21B at the 22nd International Conference on Machine Learning and Applications.",
+    "url": "",
+    "category": "Professional service"
+  },
+  {
+    "date": "2025-12",
+    "title": "Posters at AGU Fall Meeting 2025",
+    "text": "Work on solar flare explanations and the Surya heliophysics foundation model is included in the poster archive.",
+    "url": "",
+    "category": "Presentation"
+  },
+  {
+    "date": "2024-12",
+    "title": "GEO-CLOAK and solar forecasting at AGU 2024",
+    "text": "Posters include continual learning for geomagnetic forecasting, reliable solar flare prediction, and multi-wavelength forecasting.",
+    "url": "",
+    "category": "Presentation"
+  },
+  {
+    "date": "2024",
+    "title": "GEO-CLOAK NASA technical memorandum",
+    "text": "Technical memorandum on geoeffectiveness continual learning from the Frontier Development Lab collaboration.",
+    "url": "https://drive.google.com/file/d/1cIaDulWBZD1YVqopfG_fXyuAbrEauFUg/view?usp=drive_link",
+    "category": "Research"
+  },
+  {
+    "date": "2026-10-01",
+    "title": "NASA Science Activation grant funded",
+    "text": "Co-PI on “Dark Skies to Deep Time: Connecting Astronomy and Geology Through a West Texas Dark-Sky Landscape.” Funded  amount: $3,628,504.",
+    "category": "Research",
+    "url": ""
+  },
+  {
+    "date": "2026",
+    "title": "Submitted two proposals to NSF",
+    "text": "Submitted two research proposals to the National Science Foundation.",
+    "url": "",
+    "category": "Proposal submission"
+  },
+  {
+    "date": "2026",
+    "title": "Submitted two proposals to Amazon",
+    "text": "Submitted two proposals to Amazon Research Awards.",
+    "url": "",
+    "category": "Proposal submission"
+  },
+  {
+    "date": "2026",
+    "title": "Submitted a proposal to AERA",
+    "text": "Submitted a research proposal to the American Educational Research Association.",
+    "url": "",
+    "category": "Proposal submission"
+  },
+  {
+    "date": "2026",
+    "title": "Manuscript submitted: An interactive attribution-guided system for multi-scale solar flare forecasting",
+    "text": "D. A. Le, R. Chataut, A. Ji, B. Aydin, and C. Pandey. Submitted to 2026 IEEE International Conference on Big Data, Demo Track, 2026. Under review.",
+    "url": "",
+    "category": "Manuscript submission"
+  },
+  {
+    "date": "2026",
+    "title": "Manuscript submitted: DynaNet: Discovering dynamic interaction graphs for coronal mass ejection kinematics prediction",
+    "text": "P. S. Moghaddam, J. Hong, A. Ji, C. Pandey, I. B. Arpinar, and B. Aydin. Submitted to 2026 IEEE International Conference on Big Data, 2026. Under review.",
+    "url": "",
+    "category": "Manuscript submission"
+  },
+  {
+    "date": "2026",
+    "title": "Manuscript submitted: OCQR: Class-conditional conformalized quantile regression for ordinal classification",
+    "text": "J. Hong, C. Pandey, and B. Aydin. Submitted to 2026 IEEE International Conference on Big Data, 2026. Under review.",
+    "url": "",
+    "category": "Manuscript submission"
+  },
+  {
+    "date": "2026",
+    "title": "Manuscript submitted: AgeSafeBench: A large-scale benchmark for evaluating age-conditioned robustness in healthcare LLMs",
+    "text": "R. Chataut, R. Phan, C. Pandey, B. Wei, and P. Gyawali. Submitted to 2026 IEEE International Conference on Big Data, 9th Special Session on HealthCare Data, 2026. Under review.",
+    "url": "",
+    "category": "Manuscript submission"
+  },
+  {
+    "date": "2026",
+    "title": "Manuscript submitted: TAED: A trust-aware explainable defense for phishing detection under adversarial manipulation",
+    "text": "T. Nguyen, G. Campos, C. Pandey, P. K. Gyawali, and R. Chataut. Submitted to 33rd ACM Conference on Computer and Communications Security (CCS), 2026. Under review.",
+    "url": "",
+    "category": "Manuscript submission"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "NSF PESOSE Program Webinar",
+    "text": "June 23, 2026 · Seminar: NSF Pathways to Enable Secure Open-Source Ecosystems; online.",
+    "url": "",
+    "category": "Activity"
+  },
+  {
+    "date": "2026-06-01",
+    "title": "12th CCMC Community Workshop",
+    "text": "June 1–5, 2026 · Workshop; online.",
+    "url": "",
+    "category": "Activity"
+  },
+  {
+    "date": "2026-01-12",
+    "title": "Surya Science: A Hands-on Workshop",
+    "text": "January 12–16, 2026 · Workshop participation.",
+    "url": "",
+    "category": "Activity"
+  },
+  {
+    "date": "2025-12-15",
+    "title": "AGU 2025 Conference",
+    "text": "December 15–18, 2025 · Online conference attendance; New Orleans, Louisiana, United States.",
+    "url": "",
+    "category": "Activity"
+  },
+  {
+    "date": "2025-11-18",
+    "title": "NSF CSSI Program Webinar",
+    "text": "November 18, 2025 · Seminar: Cyberinfrastructure for Sustained Scientific Innovation; online.",
+    "url": "",
+    "category": "Activity"
+  },
+  {
+    "date": "2025-11-11",
+    "title": "IEEE International Conference on Data Mining",
+    "text": "November 11–15, 2025 · Conference attendance; Washington, DC, United States.",
+    "url": "",
+    "category": "Activity"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "10 years of FDL Heliolab",
+    "text": "July 31, 2025 · Speaker.",
+    "url": "https://vimeo.com/1106159268?share=copy",
+    "category": "Appearance"
+  }
+]

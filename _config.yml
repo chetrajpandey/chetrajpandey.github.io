@@ -1,0 +1,30 @@
+title: Chetraj Pandey
+url: "https://chetrajpandey.github.io"
+baseurl: ""
+markdown: kramdown
+strict_front_matter: true
+collections:
+  research:
+    output: true
+    permalink: /research-:name.html
+  events:
+    output: true
+    permalink: /event-:name.html
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - "Open Website & Editor.command"
+  - .local-preview
+  - local-admin
+  - .local-admin-backups
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - archive
+  - "Chetraj_Pandey_CV_year2025_2026_tenure_review (4).pdf"
+  - .bundle
+  - .site-verification-*

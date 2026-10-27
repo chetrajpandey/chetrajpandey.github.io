@@ -1,0 +1,130 @@
+{
+  "intro": "I mentor students interested in explainable and adaptive AI, scientific machine learning, and space weather forecasting.",
+  "members": [
+    {
+      "name": "Rakshya Panta",
+      "start_year": "2026",
+      "expected_graduation_year": "2031",
+      "group": "PhD students",
+      "role": "PhD student",
+      "linkedin_url": "https://www.linkedin.com/in/rakshya-panta-b7384a239/",
+      "bio": "Rakshya Panta is a first-year Ph.D. student in Computer Science at Texas Christian University (TCU). She holds a bachelor's degree in Electronics and Information Engineering from Tribhuvan University, Nepal. Her research primarily focuses on knowledge distillation of foundation models and explainable artificial intelligence, with an emphasis on developing efficient and interpretable deep learning models. Her previous research includes transformer-based architectures for automated code generation.",
+      "interests": [
+        "Explainable AI",
+        "Computer Vision",
+        "Knowledge Distillation"
+      ],
+      "photo": "assets/uploads/image-385ab7a5e18b-385ab7a5e18b.png",
+      "url": "",
+      "placeholder": false
+    },
+    {
+      "name": "Assem Kadirova",
+      "group": "Undergraduate researchers",
+      "role": "Undergraduate Student",
+      "linkedin_url": "https://www.linkedin.com/in/assemkdv/",
+      "bio": "Assem Kadirova is a Computer Science student and Research Assistant at Texas Christian University. Her interests focus on developing efficient software systems, optimizing performance, and exploring how computers can process and interpret visual information. Currently, she is developing software tools that help researchers work with large scientific datasets related to solar activity. Her work involves building automated data-processing pipelines, improving software reliability, and making research workflows faster and more efficient.",
+      "interests": [
+        "Data-Intensive Computing",
+        "Software Systems",
+        "Computer Vision"
+      ],
+      "photo": "assets/uploads/assem-kadirova-profile-picture-ad6cbc108fba.jpg",
+      "url": "",
+      "placeholder": false,
+      "start_year": "2025",
+      "expected_graduation_year": "2029"
+    },
+    {
+      "name": "Duc Le",
+      "group": "Undergraduate researchers",
+      "role": "Undergraduate Student",
+      "linkedin_url": "https://www.linkedin.com/in/duc-le-tcu/",
+      "bio": "Duc Le is a junior at Texas Christian University (TCU), pursuing a double major in Computer Science and Mathematics. His research interests include software development, deep learning, computer vision, and explainable artificial intelligence, particularly their applications in scientific research and space weather forecasting. As an undergraduate Research Assistant at TCU, his work focuses on applying deep learning and computer vision techniques to solar image segmentation, analyzing solar phenomena, and improving the detection and characterization of dynamic solar events.",
+      "interests": [
+        "Software Engineering",
+        "Deep Learning",
+        "Computer Vision"
+      ],
+      "photo": "assets/uploads/profile-aac11d7ce4f9.png",
+      "url": "",
+      "placeholder": false,
+      "start_year": "2024",
+      "expected_graduation_year": "2028"
+    },
+    {
+      "name": "Thu My Banh",
+      "group": "Undergraduate researchers",
+      "role": "Undergraduate Student",
+      "linkedin_url": "https://www.linkedin.com/in/mybanh/",
+      "bio": "Thu My Banh is an undergraduate Computer Science student and Research Assistant at Texas Christian University. Her research interests include machine learning and artificial intelligence, particularly their applications in space weather forecasting and multimodal data analysis. She is also interested in digital behavioral research, research cyberinfrastructure, scientific software engineering and data visualization. Her current research focuses on developing software tools and data pipelines that make large-scale scientific datasets more accessible and easier to analyze.",
+      "interests": [
+        "Software Engineering",
+        "Data Visualization",
+        "Machine Learning"
+      ],
+      "photo": "assets/uploads/1767823594470-61caddf08272.jpeg",
+      "url": "",
+      "placeholder": false,
+      "start_year": "2025",
+      "expected_graduation_year": "2029"
+    },
+    {
+      "name": "Tien Nguyen",
+      "group": "Undergraduate researchers",
+      "role": "Undergraduate Student",
+      "linkedin_url": "",
+      "bio": "Profile to be added.",
+      "interests": [],
+      "photo": "",
+      "url": "",
+      "placeholder": false,
+      "start_year": "2024",
+      "expected_graduation_year": "2028"
+    },
+    {
+      "name": "Piyush Luitel",
+      "group": "PhD students",
+      "role": "PhD Student",
+      "linkedin_url": "https://www.linkedin.com/in/piyushluitel",
+      "bio": "Piyush Luitel is a first-year Ph.D. student in Computer Science at Texas Christian University (TCU). He holds a bachelor's degree in Computer Engineering from Tribhuvan University, Nepal. His research primarily focuses on continual learning and explainable AI, with an emphasis on developing forecasting models for space weather. Previously, he worked as a Data Scientist at FleetPanda, contributing to OCR systems, predictive modeling, and cloud-based machine learning solutions.",
+      "interests": [
+        "Continual Learning",
+        "Computer Vision",
+        "Explainable AI"
+      ],
+      "photo": "assets/uploads/img-1663-4ea457e59e4d.jpg",
+      "url": "",
+      "placeholder": false,
+      "start_year": "2026",
+      "expected_graduation_year": "2031"
+    },
+    {
+      "name": "Kritika Karanjit",
+      "group": "Undergraduate researchers",
+      "role": "Undergraduate Student",
+      "linkedin_url": "",
+      "bio": "",
+      "interests": [],
+      "photo": "",
+      "url": "",
+      "placeholder": false,
+      "start_year": "2023",
+      "expected_graduation_year": "2027"
+    }
+  ],
+  "past_students": [
+    {
+      "name": "Cathy Nguyen",
+      "linkedin_url": "https://www.linkedin.com/in/cathy-nguyen-718406294/"
+    },
+    {
+      "name": "Balaji Kannan",
+      "linkedin_url": "https://www.linkedin.com/in/balaji-kannan-/"
+    },
+    {
+      "name": "Son Hoang",
+      "linkedin_url": "https://www.linkedin.com/in/sonhoang2306/"
+    }
+  ]
+}

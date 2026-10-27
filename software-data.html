@@ -1,0 +1,29 @@
+---
+layout: default
+title: Software & Data
+---
+{% include heading.html title=site.data.page_text.software_data.title text=site.data.page_text.software_data.intro %}
+<section class="container section-bottom">
+{% if site.data.products.size > 0 %}
+{% assign ordered_products = site.data.products | sort: 'date' | reverse %}
+{% assign first_products = ordered_products | where: 'id', 'solar-flare-records-dashboard' %}
+{% assign middle_products = ordered_products | where_exp: 'product', "product.id != 'solar-flare-records-dashboard'" | where_exp: 'product', "product.id != 'geo-cloak'" %}
+{% assign last_products = ordered_products | where: 'id', 'geo-cloak' %}
+{% assign products = first_products | concat: middle_products | concat: last_products %}
+<div class="product-grid">{% for product in products %}
+<article class="product-card" id="{{ product.id | escape }}">
+<p class="eyebrow">{{ product.type | escape }}{% if product.date and product.date != '' %} · {{ product.date | escape }}{% endif %}{% if product.version != '' %} · {{ product.version | escape }}{% endif %}</p>
+<h3>{{ product.title | escape }}</h3>
+<p class="product-description">{{ product.description | escape | newline_to_br }}</p>
+{% if product.license != '' %}<p class="product-license">License: {{ product.license | escape }}</p>{% endif %}
+<div class="product-links">
+{% if product.pypi_url and product.pypi_url != '' %}{% include link.html url=product.pypi_url label='PyPI' %}{% endif %}
+{% if product.repository_url != '' %}{% include link.html url=product.repository_url label='Repository' %}{% endif %}
+{% if product.dataset_url != '' %}{% include link.html url=product.dataset_url label='Dataset / download' %}{% endif %}
+{% if product.docs_url != '' %}{% include link.html url=product.docs_url label='Documentation' %}{% endif %}
+{% if product.demo_url != '' %}{% include link.html url=product.demo_url label='Demo' %}{% endif %}
+</div>
+{% if product.publication_ids.size > 0 %}<div class="product-papers"><h4>{{ site.data.page_text.software_data.related_heading | escape | newline_to_br }}</h4><ul>{% for id in product.publication_ids %}{% assign paper = site.data.publications | where: 'id', id | first %}{% if paper %}<li><a href="{{ '/publications.html' | relative_url }}#{{ paper.id | escape }}">{{ paper.title | escape }}</a> <span>({{ paper.year }})</span>{% if paper.url != '' %} · {% include link.html url=paper.url label='Read paper' %}{% endif %}</li>{% endif %}{% endfor %}</ul></div>{% endif %}
+</article>{% endfor %}</div>
+{% else %}<div class="products-empty"><h2>{{ site.data.page_text.software_data.empty_heading | escape | newline_to_br }}</h2><p>{{ site.data.page_text.software_data.empty_description | escape | newline_to_br }}</p><a class="text-link" href="{{ '/research.html' | relative_url }}">Explore the research →</a></div>{% endif %}
+</section>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: About
+---
+{% assign profile = site.data.profile %}
+<h1 class="visually-hidden">{{ site.data.page_text.about.title | escape | newline_to_br }}</h1>
+<section class="container about-layout section-bottom">
+<aside class="contact-panel"><img src="{{ profile.portrait | relative_url }}" alt="{{ profile.name | escape }}" width="320" height="340"><p class="about-affiliation">{{ profile.role | escape }}<br>{{ profile.department | escape }}<br>{% if profile.college and profile.college != '' %}{{ profile.college | escape }}<br>{% endif %}{{ profile.institution | escape }}</p><h2 class="contact-heading">{{ site.data.page_text.about.contact_heading | escape | newline_to_br }}</h2><dl class="contact-details"><div><dt>Email:</dt><dd><a href="mailto:{{ profile.email | escape }}">{{ profile.email | escape }}</a></dd></div><div><dt>Phone:</dt><dd>{{ profile.phone | default: '—' | escape }}</dd></div><div><dt>Office:</dt><dd>{{ profile.office | escape }}</dd></div></dl>{% if profile.cv_url != '' %}{% include link.html url=profile.cv_url label='Download CV' class='button button-secondary' %}{% endif %}<div class="profile-links">{% for resource in profile.links %}{% include link.html url=resource.url label=resource.label %}{% endfor %}</div><button class="pronounce-button" type="button" data-pronounce>▶ Hear my name</button><audio id="pronunciation" src="{{ '/assets/audio/pronunciation.mp3' | relative_url }}" preload="none"></audio><p id="audio-status" class="audio-status" role="status"></p></aside>
+<article class="prose about-biography">{% for paragraph in profile.bio %}<p>{{ paragraph | escape }}</p>{% endfor %}</article>
+<section class="about-education"><h2>{{ site.data.page_text.about.education_heading | escape | newline_to_br }}</h2><div class="education-list">{% for education in profile.education %}<div><span>{{ education.year | escape }}</span><div><h3>{{ education.degree | escape }}</h3><p>{{ education.institution | escape }}</p></div></div>{% endfor %}</div></section>
+<div class="about-details">{% include career-group.html group='Professional experience' title=site.data.page_text.about.experience_heading %}{% include career-group.html group='Awards and fellowships' title=site.data.page_text.about.awards_heading %}{% include career-group.html group='Leadership' title=site.data.page_text.about.leadership_heading %}</div>
+</section>

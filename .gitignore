@@ -1,0 +1,17 @@
+.DS_Store
+_site/
+__pycache__/
+# Tenure-review source material is not a public website asset.
+Chetraj_Pandey_CV_year2025_2026_tenure_review*.pdf
+archive/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/
+
+# Automatic backups created by the local form editor.
+.local-admin-backups/
+
+# Local shortcut logs and server process IDs.
+.local-preview/

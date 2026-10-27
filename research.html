@@ -1,0 +1,5 @@
+---
+layout: default
+title: Research
+---
+{% include heading.html title=site.data.page_text.research.title text=site.data.page_text.research.intro %}<section class="container section-bottom"><div class="research-grid">{% assign directions = site.research | sort: 'number' %}{% for research in directions %}{% include research-card.html item=research %}{% endfor %}</div><div class="research-note"><h2>{{ site.data.page_text.research.connection_heading | escape | newline_to_br }}</h2><p>{{ site.data.page_text.research.connection_description | escape | newline_to_br }}</p></div></section>

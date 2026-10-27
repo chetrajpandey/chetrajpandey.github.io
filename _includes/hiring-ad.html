@@ -1,0 +1,8 @@
+{% assign ad = include.ad %}
+<article class="hiring-ad{% if ad.status != 'Open' %} hiring-ad-archived{% endif %}" id="{{ ad.id | escape }}">
+  <div class="hiring-ad-heading"><h3>{% if ad.status != 'Open' %}<s>{{ ad.title | escape }}</s>{% else %}{{ ad.title | escape }}{% endif %}</h3><span class="hiring-status">{{ ad.status | escape }}</span></div>
+  <p class="hiring-meta">Posted {{ ad.date | escape }}{% if ad.deadline != '' %} · {{ ad.deadline | escape }}{% endif %}</p>
+  <div class="hiring-copy">{{ ad.description | escape | newline_to_br }}</div>
+  {% if ad.status == 'Open' %}<h4>How to apply</h4><div class="hiring-copy">{{ ad.instructions | escape | newline_to_br }}</div>{% else %}<p class="hiring-meta">This opportunity is {{ ad.status | downcase }}. Kept here for reference.</p>{% endif %}
+  {% if ad.flyer != '' %}<p>{% include link.html url=ad.flyer label='View position flier (PDF)' %}</p>{% endif %}
+</article>

@@ -1,0 +1,28 @@
+---
+layout: null
+---
+/* Generated from Appearance. Header and footer follow the light accent. */
+:root {
+  --paper: #f8fafc;
+  --page-wash: rgba(11,83,148,.07);
+  --chrome-end: {{ site.data.appearance.light_accent | default: '#4d1979' }};
+  --chrome-start: color-mix(in srgb,var(--chrome-end) 55%,#111827);
+  --accent: {{ site.data.appearance.accent | default: '#4d1979' }};
+  --brand: {{ site.data.appearance.light_accent | default: '#4d1979' }};
+  --link: var(--brand);
+  --brand-dark: color-mix(in srgb, var(--brand) 80%, black);
+  --brand-soft: color-mix(in srgb, var(--brand) 8%, var(--paper));
+  --on-brand: #ffffff;
+}
+:root[data-theme="dark"] {
+  --paper: #171b22;
+  --page-wash: transparent;
+  --brand: {{ site.data.appearance.dark_accent | default: '#d2b4ed' }};
+  --link: var(--brand);
+  --brand-dark: color-mix(in srgb, var(--brand) 80%, white);
+  --brand-soft: color-mix(in srgb, var(--brand) 14%, var(--paper));
+  --on-brand: #171b22;
+}
+@media print {
+  :root, :root[data-theme="dark"] { --paper: #ffffff; --page-wash: transparent; --brand: #333333; --link: #333333; }
+}

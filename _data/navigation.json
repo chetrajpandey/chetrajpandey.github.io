@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Home",
+    "url": "index.html"
+  },
+  {
+    "label": "News",
+    "url": "news.html"
+  },
+  {
+    "label": "Research",
+    "url": "research.html"
+  },
+  {
+    "label": "Publications",
+    "url": "publications.html"
+  },
+  {
+    "label": "Software & Data",
+    "url": "software-data.html"
+  },
+  {
+    "label": "People",
+    "url": "people.html"
+  },
+  {
+    "label": "Teaching",
+    "url": "teaching.html"
+  },
+  {
+    "label": "Hiring",
+    "url": "hiring.html"
+  },
+  {
+    "label": "Gallery",
+    "url": "gallery.html"
+  },
+  {
+    "label": "About",
+    "url": "about.html"
+  }
+]

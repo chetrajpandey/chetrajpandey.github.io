@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website editor · Chetraj Pandey</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/">Website editor<span>Chetraj Pandey</span></a><div class="top-actions"><span class="local-badge">Local changes only</span><a class="button secondary" href="http://127.0.0.1:4000/" target="_blank" rel="noopener noreferrer">View website ↗</a></div></header>
+  <div class="workspace">
+    <nav class="sidebar" aria-label="Editor sections"><p class="nav-label">CONTENT</p><button data-section="news" aria-current="page">News</button><button data-section="page_text">Page text</button><button data-section="appearance">Appearance</button><button data-section="profile">Bio &amp; profile</button><button data-section="career">About details</button><button data-section="hiring">Hiring</button><button data-section="teaching">Teaching</button><button data-section="research">Research</button><button data-section="students">Students</button><button data-section="publications">Publications</button><button data-section="products">Software &amp; Data</button><button data-section="gallery">Event gallery</button><div class="sidebar-note"><strong>Your usual workflow</strong><p>Edit here → save locally → review your website → commit and push to GitHub.</p><p>This editor never pushes changes.</p></div></nav>
+    <main id="main"><div class="page-title"><div><p class="eyebrow">YOUR FACULTY WEBSITE</p><h1 id="section-title">News</h1><p id="section-description">Announcements, presentations, and professional service.</p></div><button class="button" id="add-entry">Add news</button></div>
+      <div class="toolbar"><label for="search">Search this section</label><div class="search-row"><input id="search" type="search" placeholder="Search by title, name, or topic"><button class="button secondary" id="reload">Reload content</button></div></div>
+      <div id="status" role="status" aria-live="polite"></div><div id="content" aria-busy="true"><p>Loading your content…</p></div>
+    </main>
+  </div>
+  <dialog id="editor"><form id="entry-form"><div class="dialog-header"><div><p class="eyebrow" id="form-kicker">NEWS</p><h2 id="form-title">Add news</h2></div><button type="button" class="icon-button" id="close-dialog" aria-label="Close editor">×</button></div><div id="form-fields"></div><div id="form-error" role="alert"></div><div class="dialog-footer"><button type="button" class="button secondary" id="move-student" hidden>Move to Former students</button><button type="button" class="delete-button" id="delete-entry">Delete entry</button><div><button type="button" class="button secondary" id="cancel-entry">Cancel</button><button class="button" type="submit" id="save-entry">Save locally</button></div></div></form></dialog>
+</body>
+</html>

@@ -1,0 +1,5 @@
+---
+layout: default
+title: News
+---
+{% include heading.html title=site.data.page_text.news.title text=site.data.page_text.news.intro %}<section class="container section-bottom"><div class="news-filters" role="group" aria-label="Filter news"><button type="button" data-news-category="All" aria-pressed="true">All</button>{% assign categories = site.data.news | map: 'category' | uniq | sort %}{% for category in categories %}<button type="button" data-news-category="{{ category | escape }}" aria-pressed="false">{{ category | escape }}</button>{% endfor %}</div><p class="filter-status" id="news-status" role="status"></p>{% assign news = site.data.news | sort: 'date' | reverse %}{% for item in news %}{% include news-item.html item=item %}{% endfor %}</section>

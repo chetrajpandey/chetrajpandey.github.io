@@ -1,0 +1,102 @@
+{
+  "index": {
+    "title": "Home",
+    "greeting": "Hello, and welcome!",
+    "research_link": "Explore my research",
+    "people_link": "Meet the team",
+    "about_link": "More about me",
+    "news_heading": "Recent news",
+    "news_link": "All news",
+    "research_heading": "Research directions",
+    "research_overview_link": "Overview",
+    "publications_heading": "Selected publications",
+    "publications_link": "All publications",
+    "gallery_heading": "Presentations & activities",
+    "gallery_description": "Conferences, research visits, and moments with the team.",
+    "gallery_link": "Event gallery"
+  },
+  "research": {
+    "title": "Research",
+    "intro": "My research connects interpretable and adaptive machine learning with the challenges of scientific forecasting.",
+    "connection_heading": "Connecting methods and applications",
+    "connection_description": "These directions are closely connected: a useful forecast needs reliable predictions, meaningful explanations, and the ability to respond to changing observations."
+  },
+  "news": {
+    "title": "News",
+    "intro": "Research milestones, presentations, professional service, teaching, and updates from TCU."
+  },
+  "publications": {
+    "title": "Publications",
+    "intro": "Journal articles, conference papers, preprints, posters, technical reports. Explore by topic, year, or publication type."
+  },
+  "people": {
+    "title": "People",
+    "intro": "I mentor students interested in explainable and adaptive AI, scientific machine learning, and space weather forecasting.",
+    "faculty_heading": "Faculty",
+    "phd_heading": "PhD students",
+    "undergraduate_heading": "Undergraduate students",
+    "collaborators_heading": "Collaborators",
+    "former_heading": "Former students",
+    "biography_link": "Biography & contact",
+    "opportunities_link": "Student opportunities & inquiry guidelines"
+  },
+  "about": {
+    "title": "About",
+    "contact_heading": "Contact",
+    "education_heading": "Education",
+    "experience_heading": "Professional experience",
+    "awards_heading": "Awards and fellowships",
+    "leadership_heading": "Leadership"
+  },
+  "teaching": {
+    "title": "Teaching",
+    "intro": "Teaching across artificial intelligence, data science, mathematics, and computing.",
+    "materials_note": "Links lead to university-hosted syllabi or official curriculum resources; editions may differ from the teaching term listed. Enrolled TCU students can find assignments and restricted materials through the university’s learning management system."
+  },
+  "gallery": {
+    "title": "Event gallery",
+    "intro": "Presentations, conferences, visits, and moments with the team.",
+    "photos_heading": "Photos",
+    "related_heading": "Posters & related work",
+    "empty_photos": "Event photos will be added here."
+  },
+  "software_data": {
+    "title": "Software & Data",
+    "intro": "Software, datasets, and tools for research and discovery.",
+    "related_heading": "Related publications",
+    "empty_heading": "Research tools and resources",
+    "empty_description": "Software, datasets, and other research products will be shared here as they become available."
+  },
+  "hiring": {
+    "title": "Hiring",
+    "intro": "Student research opportunities and guidance for prospective collaborators.",
+    "welcome": "I welcome inquiries from students interested in explainable AI, continual learning, and AI for space weather. Advertised positions and their application instructions are listed below.",
+    "phd_heading": "PhD students",
+    "undergraduate_heading": "Undergraduate researchers",
+    "phd_empty": "There are currently no advertised openings for PhD students. For an independent project inquiry, please follow the guidance below.",
+    "undergraduate_empty": "There are currently no advertised openings for undergraduate researchers. For an independent project inquiry, please follow the guidance below.",
+    "history_heading": "Previous opportunities",
+    "inquiry_heading": "Have a project in mind?",
+    "inquiry_intro": "If no suitable position is advertised, you may still write to discuss a potential research collaboration. Please include:",
+    "proposal_guidance": "A concise research proposal summary describing the project you would like to work on together: the research question, why it matters, your proposed approach, and how it connects to my research.",
+    "cv_guidance": "A detailed CV including your education, relevant coursework, technical skills, research or project experience, and publications or portfolio links, if available.",
+    "availability_guidance": "Your current degree level and availability, including when you hope to begin.",
+    "inquiry_note": "Use the subject line “HUMAN INQUIRY — PhD” or “HUMAN INQUIRY — Undergraduate.” An inquiry is an expression of interest; it does not imply that a funded position is available.",
+    "inquiry_link": "Email your proposal summary and CV",
+    "notice_heading": "Your AI is not applying. You are.",
+    "notice_intro": "A quick note before you reach out: I am interested in the person behind the application. Ideally, that person is also the one who wrote it.",
+    "notice_email": "If an AI has read my papers, developed a profound passion for my research, and emailed me on your behalf, congratulations to the AI. I still need to hear from you. Please write a specific, personal message that tells me what actually interests you.",
+    "notice_cv": "Listing Python, deep learning, and twelve other skills on a CV is remarkably easy. Explaining what you built with them takes a little more preparation. Please list experience you actually have, describe your own contribution, and be ready to discuss it. A small, honest project tells me more than an impressive fictional one.",
+    "notice_closing": "AI tools can be useful. Borrowed enthusiasm, invented experience, and answers you cannot explain are less useful ways to begin a research relationship. Bring your curiosity, your questions, and your actual skills. That is a much better starting point.",
+    "notice_button": "Understood — show me the opportunities",
+    "notice_reopen_link": "Before you email me: a quick note",
+    "notice_enabled": true
+  },
+  "research_details": {
+    "back_link": "All research",
+    "question_heading": "The question",
+    "related_heading": "Related work",
+    "focus_heading": "Areas of focus",
+    "collaboration_link": "Discuss a collaboration"
+  }
+}

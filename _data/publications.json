@@ -1,0 +1,327 @@
+[
+  {
+    "id": "open-science-recommendations",
+    "title": "Recommendations for advancing heliophysics and space weather modeling through open science",
+    "citation": "M. A. Reiss, M. M. Kuznetsova, C. Corti, …, C. Pandey, et al. Space Weather (Commentary), 2026.",
+    "year": 2026,
+    "type": "Journal",
+    "url": "https://doi.org/10.1029/2026sw005194",
+    "featured": false
+  },
+  {
+    "id": "open-science",
+    "title": "Advancing heliophysics and space weather modeling through open science",
+    "citation": "C. Corti, M. M. Kuznetsova, M. Reiss, …, C. Pandey, et al. Space Weather, 2026.",
+    "year": 2026,
+    "type": "Journal",
+    "url": "https://doi.org/10.1029/2025SW004922",
+    "featured": false
+  },
+  {
+    "id": "suryabench",
+    "title": "SuryaBench: Benchmark dataset for advancing machine learning in heliophysics and space weather prediction",
+    "citation": "S. Roy, D. V. Hegde, …, C. Pandey, et al. Scientific Data, 2026.",
+    "year": 2026,
+    "type": "Journal",
+    "url": "https://doi.org/10.1038/s41597-026-06552-5",
+    "featured": true
+  },
+  {
+    "id": "llm-cyberattacks",
+    "title": "Where LLM-assisted cyberattacks break down: A stage-level analysis of workflow execution boundaries",
+    "citation": "G. Campos, T. Nguyen, C. Pandey, P. Gyawali, and R. Chataut. Data and Applications Security and Privacy XL, 2026, pp. 461–473.",
+    "year": 2026,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-032-33260-8_26",
+    "featured": false
+  },
+  {
+    "id": "segmentation2026",
+    "title": "Evaluating the effectiveness of active region/polarity inversion line segmentation with heliophysics foundation models",
+    "citation": "J. Hong et al. Preprint, January 2026.",
+    "year": 2026,
+    "type": "Preprint",
+    "url": "https://doi.org/10.22541/essoar.176858480.09545918/v1",
+    "featured": false
+  },
+  {
+    "id": "legacy-0",
+    "title": "Tamag: A python library for transformation and augmentation of solar magnetograms",
+    "citation": "T. Adeyeha, C. Pandey, and B. Aydin, “Tamag: A python library for transformation and augmentation of solar magnetograms,” SoftwareX, vol. 29, p. 102032, Feb. 2025.",
+    "year": 2025,
+    "type": "Journal",
+    "url": "https://doi.org/10.1016/j.softx.2024.102032",
+    "featured": false
+  },
+  {
+    "id": "ordinal",
+    "title": "Ordinal encoding as a regularizer in binary loss for solar flare prediction",
+    "citation": "C. Pandey, J. Hong, A. Ji, R. A. Angryk, and B. Aydin. IEEE ICDM Workshops, 2025, pp. 1890–1895.",
+    "year": 2025,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/icdmw69685.2025.00227",
+    "featured": true
+  },
+  {
+    "id": "uncertainty",
+    "title": "Uncertainty-aware solar flare regression",
+    "citation": "J. Hong, C. Pandey, and B. Aydin. IEEE ICDM Workshops, 2025, pp. 1976–1984.",
+    "year": 2025,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/ICDMW69685.2025.00238",
+    "featured": false
+  },
+  {
+    "id": "global-feature",
+    "title": "Enhancing explainability in solar energetic particle event prediction: A global feature mapping approach",
+    "citation": "A. Ji, P. Patil, C. Pandey, M. K. Georgoulis, and B. Aydin. IEEE ICDM Workshops, 2025, pp. 1905–1912.",
+    "year": 2025,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/ICDMW69685.2025.00229",
+    "featured": false
+  },
+  {
+    "id": "surya",
+    "title": "Surya: Foundation model for heliophysics",
+    "citation": "S. Roy, J. Schmude, …, C. Pandey, et al. arXiv preprint, 2025.",
+    "year": 2025,
+    "type": "Preprint",
+    "url": "https://doi.org/10.48550/arXiv.2508.14112",
+    "featured": false
+  },
+  {
+    "id": "agu2025-attribution",
+    "title": "Explaining solar flare predictions with post hoc attribution and physical relevance",
+    "citation": "C. Pandey, J. Hong, A. Ji, M. K. Georgoulis, and B. Aydin. Poster presentation online, AGU Fall Meeting, December 2025.",
+    "year": 2025,
+    "type": "Poster",
+    "url": "https://agu25.ipostersessions.com/default.aspx?s=57-1C-55-CE-4C-EF-6D-02-EC-4B-07-41-C8-8F-1B-EB",
+    "featured": false
+  },
+  {
+    "id": "agu2025-surya-evaluation",
+    "title": "Evaluation of Surya, a heliophysics foundation model, using a wide range of downstream applications",
+    "citation": "A. Muñoz-Jaramillo, S. Bahauddin, D. da Silva, …, C. Pandey, et al. Poster presentation, AGU Fall Meeting, New Orleans, 2025.",
+    "year": 2025,
+    "type": "Poster",
+    "url": "",
+    "featured": false
+  },
+  {
+    "id": "agu2025-surya",
+    "title": "Surya: Foundation model for heliophysics using SDO data",
+    "citation": "S. Roy et al. Poster presentation, AGU Fall Meeting, New Orleans, 2025.",
+    "year": 2025,
+    "type": "Poster",
+    "url": "",
+    "featured": false
+  },
+  {
+    "id": "proximity",
+    "title": "Large scale evaluation of deep learning‑based explainable solar flare forecasting models with attribution‑based proximity analysis",
+    "citation": "T. Adeyeha, C. Pandey, and B. Aydin, “Large scale evaluation of deep learning‑based explainable solar flare forecasting models with attribution‑based proximity analysis,” in 2024 IEEE International Conference on Big Data (BigData), 2024, pp. 1209–1214.",
+    "year": 2024,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/BigData62323.2024.10825177",
+    "featured": false
+  },
+  {
+    "id": "legacy-4",
+    "title": "Advancing solar flare prediction using deep learning with active region patches",
+    "citation": "C. Pandey, T. Adeyeha, J. Hong, R. A. Angryk, and B. Aydin, “Advancing solar flare prediction using deep learning with active region patches,” in Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track, Springer Nature Switzerland, 2024, pp. 50–65.",
+    "year": 2024,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-031-70381-2_4",
+    "featured": false
+  },
+  {
+    "id": "legacy-5",
+    "title": "Towards hybrid embedded feature selection and classification approach with slim‑tsf",
+    "citation": "A. Ji, C. Pandey, and B. Aydin, “Towards hybrid embedded feature selection and classification approach with slim‑tsf,” in Big Data Analytics and Knowledge Discovery, Springer Nature Switzerland, 2024, pp. 91–105.",
+    "year": 2024,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-031-68323-7_7",
+    "featured": false
+  },
+  {
+    "id": "legacy-6",
+    "title": "Embedding ordinality to binary loss function for improving solar flare forecasting",
+    "citation": "C. Pandey, A. Ji, J. Hong, R. A. Angryk, and B. Aydin, “Embedding ordinality to binary loss function for improving solar flare forecasting,” in 2024 IEEE 11th International Conference on Data Science and Advanced Analytics (DSAA), 2024.",
+    "year": 2024,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/DSAA61799.2024.10722839",
+    "featured": false
+  },
+  {
+    "id": "geo-cloak",
+    "title": "Geoeffectiveness continual learning: GEO-CLOAK",
+    "citation": "C. Pandey et al. Technical Memorandum, NASA, 2024.",
+    "year": 2024,
+    "type": "Report",
+    "url": "https://drive.google.com/file/d/1cIaDulWBZD1YVqopfG_fXyuAbrEauFUg/view?usp=drive_link",
+    "featured": false,
+    "link_label": "Read NASA technical memorandum"
+  },
+  {
+    "id": "agu2024-reliable",
+    "title": "Towards reliable deep learning models for solar flare prediction",
+    "citation": "C. Pandey, R. A. Angryk, and B. Aydin. AGU poster, 2024.",
+    "year": 2024,
+    "type": "Poster",
+    "url": "https://doi.org/10.22541/essoar.173457205.58483493/v1",
+    "featured": false
+  },
+  {
+    "id": "agu2024-geocloak",
+    "title": "GEO-CLOAK: Operational machine learning tool for global geomagnetic field perturbation forecasting",
+    "citation": "B. K. Jha, C. Pandey, O. Issan, et al. AGU, 2024. Continual learning and geomagnetic forecasting.",
+    "year": 2024,
+    "type": "Poster",
+    "url": "https://agu24.ipostersessions.com/Default.aspx?s=DD-D3-39-9E-63-33-D6-D8-6A-DE-10-39-03-5F-06-D5",
+    "featured": false
+  },
+  {
+    "id": "agu2024-multiwavelength",
+    "title": "Enhancing solar flare prediction with integrated multi-wavelength imagery and conformal prediction",
+    "citation": "J. Hong, C. Pandey, and B. Aydin. AGU, 2024.",
+    "year": 2024,
+    "type": "Poster",
+    "url": "https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1698807",
+    "featured": false
+  },
+  {
+    "id": "legacy-1",
+    "title": "Review of solar energetic particle models",
+    "citation": "K. Whitman, R. Egeland, I. G. Richardson, …, C. Pandey, et al., “Review of solar energetic particle models,” Advances in Space Research, Aug. 2023.",
+    "year": 2023,
+    "type": "Journal",
+    "url": "https://doi.org/10.1016/j.asr.2022.08.006",
+    "featured": false
+  },
+  {
+    "id": "legacy-7",
+    "title": "Unveiling the potential of deep learning models for solar flare prediction in near‑limb regions",
+    "citation": "C. Pandey, R. A. Angryk, and B. Aydin, “Unveiling the potential of deep learning models for solar flare prediction in near‑limb regions,” in 2023 International Conference on Machine Learning and Applications (ICMLA), IEEE, Dec. 2023.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/icmla58977.2023.00103",
+    "featured": false
+  },
+  {
+    "id": "legacy-8",
+    "title": "An innovative solar flare metadata collection for space weather analytics",
+    "citation": "J. Hong, C. Pandey, A. Ji, and B. Aydin, “An innovative solar flare metadata collection for space weather analytics,” in 2023 International Conference on Machine Learning and Applications (ICMLA), Dec. 2023, pp. 408–413.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/ICMLA58977.2023.00063",
+    "featured": false
+  },
+  {
+    "id": "legacy-9",
+    "title": "Enhancing solar flare prediction with innovative data‑driven labels",
+    "citation": "J. Hong, A. Ji, C. Pandey, and B. Aydin, “Enhancing solar flare prediction with innovative data‑driven labels,” in 2023 IEEE 5th International Conference on Cognitive Machine Intelligence (CogMI), IEEE, Nov. 2023.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/cogmi58952.2023.00035",
+    "featured": false
+  },
+  {
+    "id": "posthoc",
+    "title": "Explainable deep learning‑based solar flare prediction with post hoc attention for operational forecasting",
+    "citation": "C. Pandey, R. A. Angryk, M. K. Georgoulis, and B. Aydin, “Explainable deep learning‑based solar flare prediction with post hoc attention for operational forecasting,” in Discovery Science, Springer Nature Switzerland, Oct. 2023, pp. 567–581.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-031-45275-8_38",
+    "featured": true
+  },
+  {
+    "id": "legacy-11",
+    "title": "Exploring deep learning for full‑disk solar flare prediction with empirical insights from guided grad‑cam explanations",
+    "citation": "C. Pandey, A. Ji, T. Nandakumar, R. A. Angryk, and B. Aydin, “Exploring deep learning for full‑disk solar flare prediction with empirical insights from guided grad‑cam explanations,” in 2023 IEEE 10th International Conference on Data Science and Advanced Analytics (DSAA), IEEE, Oct. 2023.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/dsaa60987.2023.10302639",
+    "featured": false
+  },
+  {
+    "id": "attribution",
+    "title": "Explaining full‑disk deep learning model for solar flare prediction using attribution methods",
+    "citation": "C. Pandey, R. A. Angryk, and B. Aydin, “Explaining full‑disk deep learning model for solar flare prediction using attribution methods,” in European Conference on Machine Learning and Knowledge Discovery in Databases: ADS Track (ECML PKDD), Springer Nature Switzerland, Sep. 2023, pp. 72–89.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-031-43430-3_5",
+    "featured": false
+  },
+  {
+    "id": "legacy-13",
+    "title": "Towards interpretable solar flare prediction with attention‑based deep neural networks",
+    "citation": "C. Pandey, A. Ji, R. A. Angryk, and B. Aydin, “Towards interpretable solar flare prediction with attention‑based deep neural networks,” in 2023 IEEE Sixth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE), IEEE, Sep. 2023.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/aike59827.2023.00021",
+    "featured": false
+  },
+  {
+    "id": "legacy-14",
+    "title": "Beyond traditional flare forecasting: A data‑driven labeling approach for high‑fidelity predictions",
+    "citation": "J. Hong, A. Ji, C. Pandey, and B. Aydin, “Beyond traditional flare forecasting: A data‑driven labeling approach for high‑fidelity predictions,” in Big Data Analytics and Knowledge Discovery (DaWaK), Springer Nature Switzerland, Aug. 2023, pp. 380–385.",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-031-39831-5_34",
+    "featured": false
+  },
+  {
+    "id": "earthcube2023",
+    "title": "Insights into deep learning-based full-disk solar flare prediction with post hoc explanation and evaluation",
+    "citation": "C. Pandey, T. Adeyeha, T. Nandakumar, A. Rafal, and B. Aydin. EarthCube: A Geoscience and Cyberinfrastructure Workshop, 2023.",
+    "year": 2023,
+    "type": "Poster",
+    "url": "https://doi.org/10.13140/RG.2.2.34673.97124",
+    "featured": false
+  },
+  {
+    "id": "coupling",
+    "title": "Towards coupling full‑disk and active region‑based flare prediction for operational space weather forecasting",
+    "citation": "C. Pandey, A. Ji, R. A. Angryk, M. K. Georgoulis, and B. Aydin, “Towards coupling full‑disk and active region‑based flare prediction for operational space weather forecasting,” Frontiers in Astronomy and Space Sciences, vol. 9, Aug. 2022.",
+    "year": 2022,
+    "type": "Journal",
+    "url": "https://doi.org/10.3389/fspas.2022.897301",
+    "featured": false
+  },
+  {
+    "id": "legacy-15",
+    "title": "Deep neural networks based solar flare prediction using compressed full‑disk line‑of‑sight magnetograms",
+    "citation": "C. Pandey, R. Angryk, and B. Aydin, “Deep neural networks based solar flare prediction using compressed full‑disk line‑of‑sight magnetograms,” in Information Management and Big Data, Springer International Publishing, 2022, pp. 380–396.",
+    "year": 2022,
+    "type": "Conference",
+    "url": "https://doi.org/10.1007/978-3-031-04447-2_26",
+    "featured": false
+  },
+  {
+    "id": "aggregation2022",
+    "title": "Exploring heuristics in full-disk aggregation from individual active region prediction of solar flares",
+    "citation": "C. Pandey, M. K. Georgoulis, B. Aydin, R. A. Angryk, and A. Ji. Poster, July 2022.",
+    "year": 2022,
+    "type": "Poster",
+    "url": "https://doi.org/10.13140/RG.2.2.34673.97124",
+    "featured": false
+  },
+  {
+    "id": "legacy-16",
+    "title": "Solar flare forecasting with deep neural networks using compressed full‑disk HMI magnetograms",
+    "citation": "C. Pandey, R. A. Angryk, and B. Aydin, “Solar flare forecasting with deep neural networks using compressed full‑disk HMI magnetograms,” in 2021 IEEE International Conference on Big Data (BigData), IEEE, Dec. 2021, pp. 1725–1730.",
+    "year": 2021,
+    "type": "Conference",
+    "url": "https://doi.org/10.1109/bigdata52589.2021.9671322",
+    "featured": false
+  },
+  {
+    "id": "agu2021",
+    "title": "Training and deployment of predictive models for space weather forecasting: An application on full-disk and active region-based flare prediction",
+    "citation": "C. Pandey, A. Ji, R. Angryk, and B. Aydin. AGU Fall Meeting Abstracts, SH55A–1825, December 2021.",
+    "year": 2021,
+    "type": "Poster",
+    "url": "https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=5F-7A-C4-11-FE-CA-94-F0-F0-DF-63-FE-6F-17-3E-99",
+    "featured": false
+  }
+]

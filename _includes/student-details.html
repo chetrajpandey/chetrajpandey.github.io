@@ -1,0 +1,22 @@
+{% assign member = include.member %}
+<div class="student-identity">
+  <h3>{{ member.name | escape }}</h3>
+  <p class="person-role">{{ member.role | replace: 'PhD student', 'PhD Student' | replace: 'Undergraduate Researcher', 'Undergraduate Student' | replace: 'undergraduate researcher', 'Undergraduate Student' | escape }}{% if member.start_year and member.start_year != '' %} <span class="student-years">· {{ member.start_year | escape }}–{% if member.expected_graduation_year and member.expected_graduation_year != '' %}{{ member.expected_graduation_year | escape }} (expected){% else %}present{% endif %}</span>{% endif %}</p>
+</div>
+{% if member.interests.size > 0 %}
+<div class="student-interests">
+  <p class="interests-label">Research interests</p>
+  <ul class="interest-badges">{% for interest in member.interests %}<li>{{ interest | escape }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+{% if member.bio and member.bio != '' %}<p class="student-bio">{{ member.bio | escape | newline_to_br }}</p>{% endif %}
+{% assign linkedin = member.linkedin_url | default: '' %}
+{% assign website = member.url | default: '' %}
+{% assign member_host = website | split: '/' | slice: 2 | first | downcase %}
+{% if member_host == 'www.linkedin.com' or member_host == 'linkedin.com' %}{% if linkedin == '' %}{% assign linkedin = website %}{% endif %}{% assign website = '' %}{% endif %}
+{% if linkedin != '' or website != '' %}
+<div class="student-links">
+  {% if linkedin != '' %}{% include link.html url=linkedin label='LinkedIn profile' %}{% endif %}
+  {% if website != '' %}{% include link.html url=website label='Personal website' %}{% endif %}
+</div>
+{% endif %}
