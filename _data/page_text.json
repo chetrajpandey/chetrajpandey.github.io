@@ -3,7 +3,7 @@
     "title": "Home",
     "greeting": "Hello, and welcome!",
     "research_link": "Explore my research",
-    "people_link": "Meet the team",
+    "people_link": "Meet the students",
     "about_link": "More about me",
     "news_heading": "Recent news",
     "news_link": "All news",
@@ -30,14 +30,12 @@
     "intro": "Journal articles, conference papers, preprints, posters, technical reports. Explore by topic, year, or publication type."
   },
   "people": {
-    "title": "People",
+    "title": "Students",
     "intro": "I mentor students interested in explainable and adaptive AI, scientific machine learning, and space weather forecasting.",
-    "faculty_heading": "Faculty",
     "phd_heading": "PhD students",
     "undergraduate_heading": "Undergraduate students",
     "collaborators_heading": "Collaborators",
     "former_heading": "Former students",
-    "biography_link": "Biography & contact",
     "opportunities_link": "Student opportunities & inquiry guidelines"
   },
   "about": {

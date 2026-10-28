@@ -709,3 +709,6 @@ html { scroll-padding-top: var(--sticky-header-offset, 120px); }
 /* A fixed SVG stroke avoids platform-specific emoji glyphs on outbound links. */
 .link-arrow { display: inline-block; width: .85em; height: .85em; margin-inline-start: .25em; vertical-align: -.08em; opacity: .75; flex-shrink: 0; }
 .identity-links .link-arrow { display: none; }
+
+/* The Students page begins directly with the graduate student group. */
+.students-page > .people-group:first-child { margin-top: 0; }

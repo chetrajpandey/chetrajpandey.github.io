@@ -22,7 +22,7 @@ title: Home
     <section class="faculty-intro" aria-labelledby="about-heading">
       <h1 id="about-heading">{{ site.data.page_text.index.greeting | escape | newline_to_br }}</h1>
       {% for paragraph in profile.home_bio %}<p>{{ paragraph | escape }}</p>{% endfor %}
-      <div class="welcome-links"><a class="text-link" href="{{ '/research/' | relative_url }}">{{ site.data.page_text.index.research_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/people/' | relative_url }}">{{ site.data.page_text.index.people_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/about/' | relative_url }}">{{ site.data.page_text.index.about_link | escape | newline_to_br }} →</a></div>
+      <div class="welcome-links"><a class="text-link" href="{{ '/research/' | relative_url }}">{{ site.data.page_text.index.research_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/students/' | relative_url }}">{{ site.data.page_text.index.people_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/about/' | relative_url }}">{{ site.data.page_text.index.about_link | escape | newline_to_br }} →</a></div>
     </section>
 
     <section class="faculty-section" aria-labelledby="news-heading">
