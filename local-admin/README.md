@@ -51,7 +51,7 @@ The local editor also includes Teaching (add, edit, remove, or move courses betw
 
 ### Hiring
 
-Use **Hiring → Add hiring ad** for a PhD or undergraduate opportunity. Enter the posted date, project details, application instructions, optional deadline, and optional PDF flier (up to 20 MB). Save locally and review `/hiring.html` in the website preview.
+Use **Hiring → Add hiring ad** for a PhD or undergraduate opportunity. Enter the posted date, project details, application instructions, optional deadline, and optional PDF flier (up to 20 MB). Save locally and review `/hiring/` in the website preview.
 
 When recruitment ends, edit the ad and change **Status** to **Filled** or **Closed**. The ad remains under Previous opportunities with a crossed-out title; its PDF stays available. Use deletion only for an erroneous entry, rather than to close a position. The source records live in `_data/hiring.json`, and uploaded fliers are in `assets/documents/`. Commit both when publishing.
 

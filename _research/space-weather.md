@@ -33,8 +33,8 @@ image_alt: X1.4-class solar flare observed on September 22, 2011, by NASA's Sola
   Dynamics Observatory (SDO) using the Atmospheric Imaging Assembly (AIA).
 image: assets/uploads/complete-slide-combined-cropped-29589a035a03.gif
 layout: research
-nav: research.html
-permalink: "/research-space-weather.html"
+nav: /research/
+permalink: /research/space-weather/
 ---
 
 My research explores solar flare prediction using full-disk magnetograms and active-region imagery. These complementary views connect global solar context with the local magnetic structures associated with flaring.

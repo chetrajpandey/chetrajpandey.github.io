@@ -58,3 +58,11 @@ Preview changes before committing and pushing to `main`. The workflow in `.githu
 `_site/` is generated output. Local dependencies, editor backups and preview logs are Git-ignored. The local editor and this guide are excluded from the public site by `_config.yml`, although tracked source remains visible in a public repository.
 
 Editor saves create recoverable backups in `.local-admin-backups/`. Files under `assets/`, including uploads and public CVs, are public website content. Private source documents must remain outside published assets and covered by the repository’s exclusions.
+
+## Public URLs
+
+Main pages use directory URLs such as `/about/` and `/publications/`. Research details use `/research/SLUG/`; gallery albums use `/gallery/SLUG/`. Editing titles keeps slugs stable. Source filenames can still end in `.html` or `.md`.
+
+Existing `.html` bookmarks have static redirect pages under `legacy-redirects/`, using `_layouts/redirect.html` and `assets/js/redirect.js`. JavaScript preserves query strings and anchor fragments; a no-JavaScript refresh and visible link provide a fallback. These are HTML redirects, not HTTP 301 responses. The homepage also normalizes explicit `/index.html` visits. The public 404 stays at `/404.html` for GitHub Pages.
+
+`_data/url_redirects.json` maps older paths to their clean targets for shared link rendering. The local admin remains at port 4001 and is excluded from public output.

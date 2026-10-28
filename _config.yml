@@ -6,10 +6,10 @@ strict_front_matter: true
 collections:
   research:
     output: true
-    permalink: /research-:name.html
+    permalink: /research/:name/
   events:
     output: true
-    permalink: /event-:name.html
+    permalink: /gallery/:name/
 defaults:
   - scope:
       path: ""

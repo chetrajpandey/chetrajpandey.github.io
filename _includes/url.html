@@ -1,1 +1,10 @@
-{%- assign prefix = include.url | slice: 0, 7 -%}{%- assign secure = include.url | slice: 0, 8 -%}{%- if prefix == 'http://' or secure == 'https://' or prefix == 'mailto:' -%}{{- include.url | escape -}}{%- else -%}{{- include.url | relative_url | escape -}}{%- endif -%}
+{%- assign resolved_url = include.url -%}
+{%- assign prefix = resolved_url | slice: 0, 7 -%}{%- assign secure = resolved_url | slice: 0, 8 -%}
+{%- if prefix == 'http://' or secure == 'https://' or prefix == 'mailto:' -%}{{- resolved_url | escape -}}
+{%- else -%}
+  {%- assign route_path = resolved_url | split: '?' | first | split: '#' | first -%}
+  {%- assign route_key = route_path | remove_first: '/' -%}
+  {%- assign clean_route = site.data.url_redirects[route_key] -%}
+  {%- if clean_route -%}{%- assign resolved_url = resolved_url | replace_first: route_path, clean_route -%}{%- endif -%}
+  {{- resolved_url | relative_url | escape -}}
+{%- endif -%}

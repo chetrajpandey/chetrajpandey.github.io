@@ -21,8 +21,8 @@ resources:
 image_alt: Schematic Diagram of DAGGER in CL paradigm.
 image: assets/uploads/fdl-x-heliolab-technical-showcase-geo-cl-17905c902c51.png
 layout: research
-nav: research.html
-permalink: "/research-adaptive-learning.html"
+nav: /research/
+permalink: /research/adaptive-learning/
 image_caption: ''
 ---
 

@@ -1,0 +1,15 @@
+{
+  "index.html": "/",
+  "news.html": "/news/",
+  "research.html": "/research/",
+  "publications.html": "/publications/",
+  "software-data.html": "/software-data/",
+  "people.html": "/people/",
+  "teaching.html": "/teaching/",
+  "hiring.html": "/hiring/",
+  "gallery.html": "/gallery/",
+  "about.html": "/about/",
+  "research-space-weather.html": "/research/space-weather/",
+  "research-adaptive-learning.html": "/research/adaptive-learning/",
+  "research-explainable-ai.html": "/research/explainable-ai/"
+}

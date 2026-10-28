@@ -1,4 +1,5 @@
 ---
+permalink: /
 layout: default
 title: Home
 ---
@@ -21,21 +22,21 @@ title: Home
     <section class="faculty-intro" aria-labelledby="about-heading">
       <h1 id="about-heading">{{ site.data.page_text.index.greeting | escape | newline_to_br }}</h1>
       {% for paragraph in profile.home_bio %}<p>{{ paragraph | escape }}</p>{% endfor %}
-      <div class="welcome-links"><a class="text-link" href="{{ '/research.html' | relative_url }}">{{ site.data.page_text.index.research_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/people.html' | relative_url }}">{{ site.data.page_text.index.people_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/about.html' | relative_url }}">{{ site.data.page_text.index.about_link | escape | newline_to_br }} →</a></div>
+      <div class="welcome-links"><a class="text-link" href="{{ '/research/' | relative_url }}">{{ site.data.page_text.index.research_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/people/' | relative_url }}">{{ site.data.page_text.index.people_link | escape | newline_to_br }} →</a><a class="text-link" href="{{ '/about/' | relative_url }}">{{ site.data.page_text.index.about_link | escape | newline_to_br }} →</a></div>
     </section>
 
     <section class="faculty-section" aria-labelledby="news-heading">
-      <div class="section-heading"><h2 id="news-heading">{{ site.data.page_text.index.news_heading | escape | newline_to_br }}</h2><a class="text-link" href="{{ '/news.html' | relative_url }}">{{ site.data.page_text.index.news_link | escape | newline_to_br }} →</a></div>
+      <div class="section-heading"><h2 id="news-heading">{{ site.data.page_text.index.news_heading | escape | newline_to_br }}</h2><a class="text-link" href="{{ '/news/' | relative_url }}">{{ site.data.page_text.index.news_link | escape | newline_to_br }} →</a></div>
       {% assign news = site.data.news | sort: 'date' | reverse %}{% for item in news limit:3 %}{% include news-item.html item=item %}{% endfor %}
     </section>
     <section class="faculty-section" aria-labelledby="research-heading">
-      <div class="section-heading"><h2 id="research-heading">{{ site.data.page_text.index.research_heading | escape | newline_to_br }}</h2><a class="text-link" href="{{ '/research.html' | relative_url }}">{{ site.data.page_text.index.research_overview_link | escape | newline_to_br }} →</a></div>
+      <div class="section-heading"><h2 id="research-heading">{{ site.data.page_text.index.research_heading | escape | newline_to_br }}</h2><a class="text-link" href="{{ '/research/' | relative_url }}">{{ site.data.page_text.index.research_overview_link | escape | newline_to_br }} →</a></div>
       <div class="research-summaries">{% assign directions = site.research | sort: 'number' %}{% for direction in directions %}<article><h3><a href="{{ direction.url | relative_url }}">{{ direction.title | escape }}</a></h3><p>{{ direction.short | escape }}</p></article>{% endfor %}</div>
     </section>
     <section class="faculty-section" aria-labelledby="publications-heading">
-      <div class="section-heading"><h2 id="publications-heading">{{ site.data.page_text.index.publications_heading | escape | newline_to_br }}</h2><a class="text-link" href="{{ '/publications.html' | relative_url }}">{{ site.data.page_text.index.publications_link | escape | newline_to_br }} →</a></div>
+      <div class="section-heading"><h2 id="publications-heading">{{ site.data.page_text.index.publications_heading | escape | newline_to_br }}</h2><a class="text-link" href="{{ '/publications/' | relative_url }}">{{ site.data.page_text.index.publications_link | escape | newline_to_br }} →</a></div>
       {% for publication in site.data.publications %}{% if publication.featured %}{% include publication.html item=publication %}{% endif %}{% endfor %}
     </section>
-    <section class="faculty-section gallery-callout"><div><h2>{{ site.data.page_text.index.gallery_heading | escape | newline_to_br }}</h2><p>{{ site.data.page_text.index.gallery_description | escape | newline_to_br }}</p></div><a class="text-link" href="{{ '/gallery.html' | relative_url }}">{{ site.data.page_text.index.gallery_link | escape | newline_to_br }} →</a></section>
+    <section class="faculty-section gallery-callout"><div><h2>{{ site.data.page_text.index.gallery_heading | escape | newline_to_br }}</h2><p>{{ site.data.page_text.index.gallery_description | escape | newline_to_br }}</p></div><a class="text-link" href="{{ '/gallery/' | relative_url }}">{{ site.data.page_text.index.gallery_link | escape | newline_to_br }} →</a></section>
   </div>
 </div>

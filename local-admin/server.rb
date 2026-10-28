@@ -187,6 +187,24 @@ class FacultyEditor
     { 'accent' => color, 'light_accent' => hex.call(light), 'dark_accent' => hex.call(dark) }
   end
 
+  def news_links_to?(paths)
+    config = YAML.safe_load(File.read(File.join(ROOT, '_config.yml')))
+    own_host = URI.parse(config.fetch('url')).host
+    base = config.fetch('baseurl', '').to_s
+    targets = paths.map { |path| path.sub(%r{\A/}, '').sub(%r{/$}, '') }
+    read_json('news').any? do |item|
+      begin
+        uri = URI.parse(item['url'].to_s)
+        next false if uri.host && uri.host != own_host
+        path = uri.path.to_s
+        path = path.delete_prefix(base) if !base.empty? && path.start_with?(base + '/')
+        targets.include?(path.sub(%r{\A/}, '').sub(%r{/$}, ''))
+      rescue URI::InvalidURIError
+        false
+      end
+    end
+  end
+
   def save(payload)
     raise EditError, 'Files changed since you opened this form. Reload the editor before saving.' unless payload['revision'] == revision
     kind = payload['kind']
@@ -385,8 +403,7 @@ class FacultyEditor
       old = index.nil? ? {} : documents[index]
       if deleting
         raise EditError, 'Choose an existing research page to delete.' if index.nil?
-        target_url = 'research-' + old['slug'] + '.html'
-        linked = read_json('news').any? { |item| item['url'].to_s.sub(%r{\A/}, '') == target_url }
+        linked = news_links_to?(['/research/' + old['slug'] + '/', '/research-' + old['slug'] + '.html'])
         raise EditError, 'A News entry links to this research page. Update that link before deleting the page.' if linked
         backup_dir = File.join(ROOT, '.local-admin-backups')
         FileUtils.mkdir_p(backup_dir)
@@ -406,7 +423,7 @@ class FacultyEditor
         resources = record.fetch('resources', [])
         raise EditError, 'Invalid resource links.' unless resources.is_a?(Array)
         resources = resources.map { |item| { 'label' => text(item, 'label', true, 200), 'url' => url_value(item, 'url') } }
-        metadata = old.reject { |name, _| ['body', '_filename'].include?(name) }.merge('slug' => key, 'title' => title, 'number' => format('%02d', order), 'label' => text(record, 'label', true, 100), 'short' => text(record, 'short', true, 2000), 'intro' => text(record, 'intro', true, 5000), 'question' => text(record, 'question', true, 2000), 'image' => image, 'image_alt' => text(record, 'image_alt', true, 1000), 'image_caption' => text(record, 'image_caption', false, 2000), 'focus' => focus.map(&:strip), 'publication_ids' => ids, 'resources' => resources, 'layout' => 'research', 'nav' => 'research.html', 'permalink' => '/research-' + key + '.html')
+        metadata = old.reject { |name, _| ['body', '_filename'].include?(name) }.merge('slug' => key, 'title' => title, 'number' => format('%02d', order), 'label' => text(record, 'label', true, 100), 'short' => text(record, 'short', true, 2000), 'intro' => text(record, 'intro', true, 5000), 'question' => text(record, 'question', true, 2000), 'image' => image, 'image_alt' => text(record, 'image_alt', true, 1000), 'image_caption' => text(record, 'image_caption', false, 2000), 'focus' => focus.map(&:strip), 'publication_ids' => ids, 'resources' => resources, 'layout' => 'research', 'nav' => '/research/', 'permalink' => '/research/' + key + '/')
         path = File.join(ROOT, '_research', index.nil? ? key + '.md' : old['_filename'])
         atomic_write(path, metadata.to_yaml + "---\n\n" + text(record, 'body') + "\n")
       end
@@ -416,8 +433,7 @@ class FacultyEditor
       old = index.nil? ? {} : events[index]
       if deleting
         raise EditError, 'Choose an existing event to delete.' if index.nil?
-        target_url = 'event-' + old['slug'] + '.html'
-        linked = read_json('news').any? { |item| item['url'].to_s.sub(%r{\A/}, '') == target_url }
+        linked = news_links_to?(['/gallery/' + old['slug'] + '/', '/event-' + old['slug'] + '.html'])
         raise EditError, 'A News entry links to this event. Update or remove that link before deleting the event.' if linked
         path = File.join(ROOT, '_events', old['_filename'])
         backup_dir = File.join(ROOT, '.local-admin-backups')
@@ -436,9 +452,10 @@ class FacultyEditor
         links = record.fetch('links', [])
         raise EditError, 'Invalid event links.' unless links.is_a?(Array)
         links = links.map { |item| { 'label' => text(item, 'label', true, 200), 'url' => url_value(item, 'url') } }
-        metadata = old.reject { |name, _| ['body', '_filename'].include?(name) }.merge('slug' => key, 'title' => title, 'event_date' => date_value(record, 'event_date'), 'category' => text(record, 'category', true, 100), 'location' => text(record, 'location'), 'description' => text(record, 'description', true, 2000), 'photos' => photos, 'publication_ids' => ids, 'links' => links, 'layout' => 'event', 'nav' => 'gallery.html', 'permalink' => '/event-' + key + '.html')
+        metadata = old.reject { |name, _| ['body', '_filename'].include?(name) }.merge('slug' => key, 'title' => title, 'event_date' => date_value(record, 'event_date'), 'category' => text(record, 'category', true, 100), 'location' => text(record, 'location'), 'description' => text(record, 'description', true, 2000), 'photos' => photos, 'publication_ids' => ids, 'links' => links, 'layout' => 'event', 'nav' => '/gallery/', 'permalink' => '/gallery/' + key + '/')
         path = File.join(ROOT, '_events', index.nil? ? key + '.md' : old['_filename'])
         document = metadata.to_yaml + "---\n\n" + text(record, 'body') + "\n"
+        FileUtils.mkdir_p(File.dirname(path))
         atomic_write(path, document)
       end
     else

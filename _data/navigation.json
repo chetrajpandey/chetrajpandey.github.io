@@ -1,42 +1,42 @@
 [
   {
     "label": "Home",
-    "url": "index.html"
+    "url": "/"
   },
   {
     "label": "News",
-    "url": "news.html"
+    "url": "/news/"
   },
   {
     "label": "Research",
-    "url": "research.html"
+    "url": "/research/"
   },
   {
     "label": "Publications",
-    "url": "publications.html"
+    "url": "/publications/"
   },
   {
     "label": "Software & Data",
-    "url": "software-data.html"
+    "url": "/software-data/"
   },
   {
     "label": "People",
-    "url": "people.html"
+    "url": "/people/"
   },
   {
     "label": "Teaching",
-    "url": "teaching.html"
+    "url": "/teaching/"
   },
   {
     "label": "Hiring",
-    "url": "hiring.html"
+    "url": "/hiring/"
   },
   {
     "label": "Gallery",
-    "url": "gallery.html"
+    "url": "/gallery/"
   },
   {
     "label": "About",
-    "url": "about.html"
+    "url": "/about/"
   }
 ]

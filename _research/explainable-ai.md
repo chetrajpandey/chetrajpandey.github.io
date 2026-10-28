@@ -25,8 +25,8 @@ image_alt: Temporal Tracking of a X-class flare on the Eastern-limb of the Sun w
   corresponding explanation maps.
 image: assets/uploads/full-grid-magma-fca960e24c06.gif
 layout: research
-nav: research.html
-permalink: "/research-explainable-ai.html"
+nav: /research/
+permalink: /research/explainable-ai/
 ---
 
 Deep neural networks can identify complex patterns in scientific imagery, but predictive accuracy alone does not tell us whether those patterns are physically meaningful. I investigate attention mechanisms and post hoc attribution methods to examine the evidence behind solar flare predictions.

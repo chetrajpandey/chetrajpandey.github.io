@@ -1,3 +1,8 @@
+// Directory index files share the clean directory URL.
+if (window.location.pathname.endsWith('/index.html')) {
+  window.location.replace(window.location.pathname.slice(0, -10) + window.location.search + window.location.hash);
+}
+
 document.body.classList.add('js');
 /* Progressive enhancement: content and navigation also work without JavaScript. */
 const menuButton = document.querySelector('.menu-toggle');
