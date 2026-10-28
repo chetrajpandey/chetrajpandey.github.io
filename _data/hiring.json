@@ -1,3 +1,13 @@
 [
-
+  {
+    "id": "undergraduate-research-ai-software-2026",
+    "title": "Undergraduate Research Opportunities — Two Paid Positions",
+    "group": "Undergraduate",
+    "status": "Filled",
+    "date": "2026-08-28",
+    "deadline": "Review Begins October 1",
+    "flyer": "",
+    "description": "Two positions · $12.00 per hour · 10 hours per week per student\n\nI am looking for two undergraduate students interested in building and studying AI systems, with experience in LLM fine-tuning, computer vision, and software development.\n\nOur work connects machine learning with scientific problems, including solar physics and space weather. These positions offer an opportunity to move beyond classroom projects: investigate research questions, run experiments, and turn ideas into useful software.\n\nWhat you could work on\n• LLM fine-tuning: Adapt and evaluate language models for research tasks.\n• Computer vision: Develop and assess methods for scientific image analysis.\n• Software development: Build tools, interfaces, and reproducible workflows that support our research.\n\nSpecific projects will depend on your experience, interests, and the team’s research priorities.\n\nWho should apply\nUndergraduate students with strong Python programming skills, experience with machine learning, and hands-on experience in one or more of the areas above. You should be able to explain your own code, design decisions, and experimental results, and be willing to learn through debugging, reading, and collaboration.\n\nExperience with PyTorch, Hugging Face, Git, or web application development is useful. You do not need to know everything listed here—describe clearly what you have done and what you would like to learn.",
+    "instructions": "Email c.pandey@tcu.edu with the subject “Undergraduate Research Application — Your Name” and include:\n\n1. Your CV, including your major, year of study, and expected graduation date.\n2. A brief research proposal or project summary describing a problem you would like to explore with our group, a possible approach, and why it interests you. Half a page is sufficient.\n3. A link to a relevant project or code repository, with a short explanation of your personal contribution.\n4. Your availability for a 10-hour weekly commitment and your possible start date.\n\nPlease write in your own voice and represent your experience accurately. A small project you understand deeply is more compelling than an impressive list of tools you cannot explain."
+  }
 ]
